@@ -63,6 +63,12 @@ The trainee must be observed to routinely use safe working practices when workin
 
 ### Setup and control of coolant system
 ### Cleaning machine area before and after use
+### Shutdown and turn off
+ * Remove tool from spindle
+ * Clean machine area
+ * Engage emergency stop
+ * Switch off control box
+ * Close software
 
 ### Training
 
