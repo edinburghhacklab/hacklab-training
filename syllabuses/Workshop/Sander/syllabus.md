@@ -7,6 +7,7 @@
 
 ### Entanglement risks
  * No loose clothing or cables.
+ * No gloves.
  * Long hair must be tied back.
  * Fingers must be kept at least 10cm away from moving parts.
  * Particular care must be taken around the gap where the belt disappears.
