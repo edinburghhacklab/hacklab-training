@@ -24,6 +24,10 @@
 ### Machine can manually be spun freely
  * Belt must stay aligned when spinning the sander manually.
 
+### Dust extraction
+ * Dust extraction must be used when using the sander
+ * The dust extractor should turn on automatically when scanning into the machine. If it doesn't come on automatically, it should be turned on manually with the button on the front of the dust extractor.
+
 ## Usage
 ### General
  * Hold workpiece tight, but only press it lightly into the abrasive.
