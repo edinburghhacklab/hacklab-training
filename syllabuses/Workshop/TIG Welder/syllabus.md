@@ -59,5 +59,23 @@
  * Workpiece must have all paint, scale rust, grease, etc. removed prior to welding. Only weld on clean, bright metal. Easiest way to do the prep is with an angle grinder and a flap disc or wire wheel.
 
 ### Welding
- * 
-TODO: arc length, torch angle, movement speed, ramp up/down, postflow
+ * Torch Angle
+   * The welding torch should be positioned about 15 degrees from vertical with the electrode pointing in the direction of trave, This 'pushes' the arc force into the parent metal, assisting the progression of the weld whilst preventing the weld pool become overheated. It also makes room to see the weld puddle and to dip the filler.
+ * Arc Length
+   * The tip of the electrode should be within a few mm of the workpiece at all times during welding.
+   * A longer arc generates more heat and is prone to wandering and losing focus.
+   * Too short an arc risks contaminating the electrode with weld material.
+ * Preflow
+   * When initiating the weld, hold the torch away from anything and tap the foot pedal to start the gas flow. This allows the shielding gas to buildup over the weld strike area.
+ * Arc Initiation
+   * The welder is equipped with high frequency start, this enables arc initiation without touching the work piece. On striking the arc, it will take a few moments for the weld puddle to form, allow this to happen prior to moving or adding filler. You should see a 'keyhole' begin to open a head of the arc and it is into this keyhole you can begin to add filler material.
+ * Speed of Travel
+   *  With practise speed of travel becomes easier to 'feel', but as a general rule you may need to speed up travel as the weld progresses and the workpiece heats up. If using the foot pedal, you can also reduce amperage as the weld progresses in order to control the total heat.
+ * Contamination
+   * Should the electrode become contaminated, stop welding immediately, allowing for post flow as described below, then regrind the electrode tip being sure to remove all the contamination.
+   * You may also need to wire brush the workpiece to clean it again before restarting.
+ * Finishing welding
+   * When you reach the end of the weld, add a little more filler than you normally would, this assists in filling the final crater in the weld.
+   * Release the foot pedal gradually while moving the torch around to prevent the weld cooling too quickly.
+ * Post Flow
+   * Do not immediately remove the torch from the weld. There is a configured 'post flow' of gas which continues flowing in order to protect the weld puddle as it solidifies.
