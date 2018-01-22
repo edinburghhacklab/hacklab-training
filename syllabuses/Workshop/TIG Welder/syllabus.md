@@ -1,9 +1,10 @@
-# TIG Welder (DRAFT)
+# TIG Welder
 
 ## Safety
 ### UV hazards
  * Welding hood, gloves and long-sleeved non-synthetic top must be worn for UV protection.
  * The welding curtain must be drawn around the area before welding, taking care to close any gaps to protect other people.
+ * If other people are watching, the user must give a warning before each time they start welding.
 
 ### Heat
  * The work area must be cleared of all flammable materials prior to welding.
