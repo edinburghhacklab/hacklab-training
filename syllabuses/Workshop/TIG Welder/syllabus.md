@@ -50,6 +50,7 @@
    * Increased clean width means more cleaning action, but can also overheat/melt the tungsten.
 
 ### Torch setup
+ * Take care with the torch. Parts of it are brittle and will break if dropped.
  * Electrode/collet/cup size selection
    * Refer to guidance on the wall.
  * Electrode preparation
@@ -80,3 +81,8 @@
    * Release the foot pedal gradually while moving the torch around to prevent the weld cooling too quickly.
  * Post Flow
    * Do not immediately remove the torch from the weld. There is a configured 'post flow' of gas which continues flowing in order to protect the weld puddle as it solidifies.
+
+#### Evaluation
+The trainee should be able to run a bead under control. It does not need to be perfect - common problems like dipping the tungsten or an inconsistent bead are ok. Particular things to watch out for and correct are:
+  * Too much heat. The trainee should recognise and stop when they are putting in too much heat and getting out of control.
+  * Controlled stops. The trainee should stop welding by lifting off the foot pedal while keeping the torch in place. Pulling the torch away and drawing a large arc is not ok.
