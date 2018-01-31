@@ -9,6 +9,7 @@
 ### Heat
  * The work area must be cleared of all flammable materials prior to welding.
  * Workpiece and TIG torch will get very hot so care must be taken around them.
+ * Leave the curtain drawn around the area when leaving items to cool.
 
 ### Fume hazards
  * The fan should be run for all usage.
