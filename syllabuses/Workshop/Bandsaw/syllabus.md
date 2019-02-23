@@ -38,7 +38,8 @@
  * The E-stop should be pressed in an emergency, this will cut power to the bandsaw
 ### General
  * Hold workpiece tight, push at a steady rate through the blade.
- * Only work on pieces you can safely hold by yourself. If it's too large, cut it down to a manageable size first. If the workpiece is too small to safely hold, saw it with a hacksaw.
+ * Only work on pieces you can safely hold by yourself. If it's too large, cut it down to a manageable size first. If the workpiece is too small to safely hold, saw it with a hacksaw or use a push stick.
+ * Do not push directly towards the blade, either use a push stick or push on the material not towards the blade.
  * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade.
  * Do not leave the machine running unattended.
  * Have a wide/stable stance.
