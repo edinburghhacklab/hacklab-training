@@ -21,6 +21,7 @@
 
 ### No damage to blade
 ### Machine can manually be spun freely
+ * Power off the machine before checking this
  * Blade must stay aligned when spinning manually
 
 ### All doors are closed on the machine
