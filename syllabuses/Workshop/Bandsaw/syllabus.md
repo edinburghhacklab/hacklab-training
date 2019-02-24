@@ -44,6 +44,7 @@
  * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade.
  * Do not leave the machine running unattended.
  * Have a wide/stable stance.
+ * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece.
 
 ### Post Cutting
  * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
