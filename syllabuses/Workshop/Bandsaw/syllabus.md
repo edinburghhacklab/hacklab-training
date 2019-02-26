@@ -1,6 +1,7 @@
 # Bandsaw
 
 ## Safety
+
 ### PPE
  * Safety glasses required.
 
@@ -12,6 +13,7 @@
  * Particular care must be taken around the gap where the blade disappears.
 
 ## Startup checks
+
 ### Surrounding area cleared of obstacles
 ### Other workshop users alerted to keep clear
 ### Table clear of objects
@@ -28,15 +30,18 @@
  * Front and back door
 
 ## Usage
+
 ### Starting of the machine
  * Tap your tag on the access control.
  * Release the E-Stop
  * Press the green button on the contactor
    * Wait for the VFD to start
  * Press the green button on the bandsaw
+
 ### Stopping of the machine
  * Both the foot switch and the red button on the bandsaw will cause a VFD stop, and should be used in most situations
  * The E-stop should be pressed in an emergency, this will cut power to the bandsaw
+
 ### General
  * Hold workpiece tight, pressing the workpiece firmly into the table, push at a steady rate through the blade.
  * Only work on pieces you can safely hold by yourself. If it's too large, ask for another member's help to hold the material.
@@ -64,5 +69,6 @@
  * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
 
 ## Maintenance
+
 ### General
  * If there are any issues, please contact a maintainer listed on the bandsaw wiki page. Example issues: damaged blade, blade out of alignment or terrible noises from moving parts.
