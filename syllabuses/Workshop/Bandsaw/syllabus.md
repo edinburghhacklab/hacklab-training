@@ -8,7 +8,7 @@
  * No loose clothing or cables.
  * No gloves.
  * Long hair must be tied back.
- * Fingers must be kept at least 10cm away from moving parts.
+ * Keep your hands a reasonable distance away from the blade i.e. at least 3-4cm.
  * Particular care must be taken around the gap where the blade disappears.
 
 ## Startup checks
@@ -39,12 +39,26 @@
  * The E-stop should be pressed in an emergency, this will cut power to the bandsaw
 ### General
  * Hold workpiece tight, pressing the workpiece firmly into the table, push at a steady rate through the blade.
- * Only work on pieces you can safely hold by yourself. If it's too large, cut it down to a manageable size first. If the workpiece is too small to safely hold, saw it with a hacksaw or use a push stick.
- * Do not push directly towards the blade, either use a push stick or push on the material not towards the blade.
- * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade.
+ * Only work on pieces you can safely hold by yourself. If it's too large, ask for another member's help to hold the material.
+ * Keep your hands out of the cutline at all times.
+ * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade. 
+ * Make sure the workpiece is supported e.g. pieces with overhangs or circular pieces.
+ * Don't force the blade to cut a small radius curve. If this is required make it with multiple small cuts
+ * Never back out of a radius cut while the machine is running.
  * Do not leave the machine running unattended.
  * Have a wide/stable stance.
  * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece.
+
+## Materials
+ * Acceptable materials:
+   * Wood
+   * Aluminium
+   * Mild steel
+   * Copper
+ * Unacceptable materials:
+   * Stainless steel
+   * Hardened steel
+ * If you material isn't on this list check the wiki, if not, ask a maintainer
 
 ### Post Cutting
  * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
