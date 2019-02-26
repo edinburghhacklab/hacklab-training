@@ -49,7 +49,7 @@
  * Have a wide/stable stance.
  * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece.
 
-## Materials
+### Materials
  * Acceptable materials:
    * Wood
    * Aluminium
