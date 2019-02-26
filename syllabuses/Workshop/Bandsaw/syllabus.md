@@ -63,7 +63,7 @@
  * Unacceptable materials:
    * Stainless steel
    * Hardened steel
- * If you material isn't on this list check the wiki, if not, ask a maintainer
+ * If your material isn't on this list check the wiki, if not, ask a maintainer
 
 ### Post Cutting
  * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
