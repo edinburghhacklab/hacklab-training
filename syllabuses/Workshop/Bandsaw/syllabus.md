@@ -7,11 +7,11 @@
  * Hearing protection recommended
 
 ### Entanglement risks
- * No loose clothing or cables.
- * No gloves.
- * Long hair must be tied back.
- * Keep your hands a reasonable distance away from the blade i.e. at least 3-4cm.
- * Particular care must be taken around the gap where the blade disappears.
+ * No loose clothing or cables
+ * No gloves
+ * Long hair must be tied back
+ * Keep your hands a reasonable distance away from the blade i.e. at least 3-4cm
+ * Particular care must be taken around the gap where the blade disappears
 
 ## Startup checks
 
@@ -34,7 +34,7 @@
 ## Usage
 
 ### Starting of the machine
- * Tap your tag on the access control.
+ * Tap your tag on the access control
  * Release the E-Stop
  * Press the green button on the contactor
    * Wait for the VFD to start
@@ -45,16 +45,16 @@
  * The E-stop should be pressed in an emergency, this will cut power to the bandsaw
 
 ### General
- * Hold workpiece tight, pressing the workpiece firmly into the table, push at a steady rate through the blade.
- * Only work on pieces you can safely hold by yourself. If it's too large, ask for another member's help to hold the material.
- * Keep your hands out of the cutline at all times.
- * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade. 
- * Make sure the workpiece is supported e.g. pieces with overhangs or circular pieces.
+ * Hold workpiece tight, pressing the workpiece firmly into the table, push at a steady rate through the blade
+ * Only work on pieces you can safely hold by yourself. If it's too large, ask for another member's help to hold the material
+ * Keep your hands out of the cutline at all times
+ * Keep work in contact with table or stops. Do not freehand above the surface. Elevated parts will be grabbed by the blade
+ * Make sure the workpiece is supported e.g. pieces with overhangs or circular pieces
  * Don't force the blade to cut a small radius curve. If this is required make it with multiple small cuts
- * Never back out of a radius cut while the machine is running.
- * Do not leave the machine running unattended.
- * Have a wide/stable stance.
- * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece.
+ * Never back out of a radius cut while the machine is running
+ * Do not leave the machine running unattended
+ * Have a wide/stable stance
+ * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece
 
 ### Materials
  * Acceptable materials include:
@@ -74,9 +74,9 @@
   * Check the speed and belt/gearbox positions and consult the wiki page for a table of settings for different materials
 
 ### Post Cutting
- * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
+ * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table
 
 ## Maintenance
 
 ### General
- * If there are any issues, please contact a maintainer listed on the bandsaw wiki page. Example issues: damaged blade, blade out of alignment or terrible noises from moving parts.
+ * If there are any issues, please contact a maintainer listed on the bandsaw wiki page. Example issues: damaged blade, blade out of alignment or terrible noises from moving parts
