@@ -3,7 +3,8 @@
 ## Safety
 
 ### PPE
- * Safety glasses required.
+ * Safety glasses required
+ * Hearing protection recommended
 
 ### Entanglement risks
  * No loose clothing or cables.
@@ -23,7 +24,8 @@
 
 ### No damage to blade
 ### Machine can manually be spun freely
- * Power off the machine before checking this 
+ * Power off the machine before checking this
+ * Open the front door, spin the blade by hand to check it runs freely
  * Blade must stay aligned when spinning manually
 
 ### All doors are closed on the machine
@@ -36,7 +38,7 @@
  * Release the E-Stop
  * Press the green button on the contactor
    * Wait for the VFD to start
- * Press the green button on the bandsaw
+ * Press the green button on the bandsaw to start the motor
 
 ### Stopping of the machine
  * Both the foot switch and the red button on the bandsaw will cause a VFD stop, and should be used in most situations
@@ -55,15 +57,21 @@
  * If the workpiece gets stuck in the blade, stop the machine and gently remove the piece.
 
 ### Materials
- * Acceptable materials:
+ * Acceptable materials include:
    * Wood
    * Aluminium
    * Mild steel
    * Copper
- * Unacceptable materials:
+   * Plastic
+ * Unacceptable materials include:
    * Stainless steel
    * Hardened steel
- * If your material isn't on this list check the wiki, if not, ask a maintainer
+ * Consult the complete list of materials on the wiki page and ask a maintainer if you are unsure of suitability
+
+### Changing the cutting speed
+  * The bandsaw can run at different speeds for different materials
+  * The speed is changed by adjusting the belt and gearbox position in the rear compartment
+  * Check the speed and belt/gearbox positions and consult the wiki page for a table of settings for different materials
 
 ### Post Cutting
  * Once you have finished you cut, turn off the bandsaw, log out of the access control, and clean up the table.
