@@ -1,4 +1,4 @@
-# CNC Mill
+# CNC Router
 
 ## Safety
 ### Awareness of risks
@@ -152,6 +152,7 @@ The trainee must be able to, without prompting:
 #### Chamfer mills
 #### Spot drills
 #### Drill bits
+#### Engraving bits
 #### Roughing vs finishing tools
 
 ### Use of collets
