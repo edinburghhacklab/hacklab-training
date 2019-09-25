@@ -13,18 +13,18 @@
 * No loose clothing or cables
 * No gloves
 * Long hair must be tied back
-* No jewlery/watches
+* No jewellery/watches
 
 ### Kickback risks
 
 * Ensure riving knife is properly installed:
-  * The radial clearance between saw blade and riving knife
+  * The radial clearance between saw blade and riving knife
 may not exceed 5 mm (max.).
-  * The thickness of the riving knife must be smaller than the
+  * The thickness of the riving knife must be smaller than the
 cutting width and greater than the blade thickness.
-  * The riving knife must always be in a line to the saw blade.
+  * The riving knife must always be in a line to the saw blade.
 * Stand with torso away from the cut line.
-* Ensure the full lenght of the workpiece is in contact with the parallel guide while cutting.
+* Ensure the full length of the workpiece is in contact with the parallel guide while cutting.
 * Always use an angle guide when cross-cutting.
 * Never back stock off blade.
 * If the saw blade should become jammed, switch the machine off and hold the workpiece until the saw blade comes to a complete stop. To prevent kickback, the workpiece may not be moved until after the machine has come to a complete stop.
@@ -38,14 +38,14 @@ cutting width and greater than the blade thickness.
 
 ### Table clear of objects
 
-### The insert-plate in place and undamamged
+### The insert-plate in place and undamaged
 
 ### Blade, blade guard, and riving knife set up correctly
 
 * Power off when performing checks
 * Aligned correctly
 * All adjustments tightened
-   * Pay particular attention to the position of the locking lever for locking the saw blade and for adjusting the bevel angle.
+   * Pay particular attention to the position of the locking lever for locking the saw blade and for adjusting the bevel angle.
 * Always adjust the blade guard in such a manner that it faces loosely against the workpiece when
 sawing.
 * Blade guard does not interfere with the workpiece
@@ -56,7 +56,7 @@ sawing.
 ### Workpiece free of any metals (nails, screws), glass etc.
 
 ### Workpiece has a straight factory edge aligned to the parallel guide
- * Do not saw warped/bent workpieces.
+ * Do not saw warped/bent workpieces.
 
 ### Wide workpieces must be underlaid or supported at their free end.
 * Check manual on how to pull out the saw-table extension.
@@ -82,11 +82,11 @@ sawing.
 * Set the parallel guide at desired distance and lock it in place.
 
 * Use push sticks and auxiliary guide when cutting narrow pieces (10cm rule of thumb)
-  * Have push sticks ready before starting the cut.
-  * Check manual on how to install auxiliary guide.
+  * Have push sticks ready before starting the cut.
+  * Check manual on how to install auxiliary guide.
 
 * Saw by feeding the workpiece at a uniform rate
-* Ensure that the flat edge of the workpiece must always be touching the parrallel guide.
+* Ensure that the flat edge of the workpiece must always be touching the parallel guide.
 * Push stock completely past the back side of the blade.
 
 
@@ -94,7 +94,7 @@ sawing.
 
 * Adjust the requested mitre angle
 * Place the workpiece against profile rail.
-  * The profile may not be on the cutting line. If so, loosen knurled nut and move the profile.
+  * The profile may not be on the cutting line. If so, loosen knurled nut and move the profile.
 
 * With one hand, press the workpiece against the profile rail and with the other hand, slowly move the angle stop via locking knob toward the front in guide groove.
 
@@ -106,7 +106,7 @@ sawing.
 * Keep hands away from blade (never reach across the blade, or over-reach)
 * Use of push sticks is a must if hand will come closer than 10 cm to the blade.
 * To ensure the workpiece is in contact with the parallel guide, the force exerted on the workpiece should be at a slight angle toward the fence (as opposed to purely parallel to the blade).
-  * One tip is to focus where the workpiece is with respect to the parallel guide, rather than the blade (while keeping awareness of the blade!).
+  * One tip is to focus where the workpiece is with respect to the parallel guide, rather than the blade (while keeping awareness of the blade!).
 
 ### Intended Use (a.k.a Materials)
 
@@ -116,12 +116,12 @@ straight lengthways and crossways cuts in hard and softwood, as well as in parti
 * In this, mitre angles from –60° to +60° as well as bevel angles from –2° to 47° are possible.
 * When using appropriate saw blades, sawing aluminium profiles and plastic is also possible.
 * Maximum Workpiece Dimensions:
-  - 79mm at 0° bevel angle
-  - 56mm at 45° bevel angle
+  - 79mm at 0° bevel angle
+  - 56mm at 45° bevel angle
 
 ### Post Cutting
 
-* Once you have finished your cut, turn off the tablesaw, log out of the access control, and clean up the table saw and the surounding area.
+* Once you have finished your cut, turn off the table saw, log out of the access control, and clean up the table saw and the surrounding area.
 * Place the angle guide back in its place.
 * Place the push-sticks back in their place.
 * Fully lower the blade
@@ -131,5 +131,5 @@ straight lengthways and crossways cuts in hard and softwood, as well as in parti
 
 ### General
 
-* If there are any issues, please contact a maintainer listed on the bandsaw wiki page. Example issues: damaged blade, terrible noises from moving parts.
+* If there are any issues, please contact a maintainer listed on the table saw wiki page. Example issues: damaged blade, terrible noises from moving parts.
 * Do not attempt to change the blade without a maintainer present, and notify the other members if the blade is intended for specific materials only.
