@@ -5,7 +5,7 @@
 ### PPE
 
 * Safety glasses required
-* Hearing protection recommended
+* Hearing protection recommended (especially when cutting metals) 
 
 ### Entanglement risks
 
@@ -31,13 +31,15 @@
   * Power off the machine before checking this
   * Open the front door, spin the blade by hand to check it runs freely
   * Blade must stay aligned when spinning manually
+* Remind the trainee that they **should not** start a cut if they are not comfortable with how the machine is set up. Instead, they should contact the maintainers (tools@edinburghhacklab.com / wiki)
 
 ### Speed
 
 * The bandsaw can run at different speeds for different materials
 * The speed is changed by adjusting the belt and gearbox position in the rear compartment
 * Check the speed and belt/gearbox positions and consult the wiki page for a table of settings for different materials
-* Close both doors after changing
+* Close both doors after changing speed
+* Trainees should never assume the speed is correctly set for the material they are about to cut - check every time they start a session
 
 ## Usage
 
@@ -81,17 +83,23 @@
 * Unacceptable materials include:
   * Stainless steel
   * Hardened steel
-* Consult the complete list of materials on the wiki page and ask a maintainer if you are unsure of suitability
+* Consult the complete list of materials on the wiki page
+* Ask a maintainer if you are unsure of suitability
 
 ### Post Cutting
 
 * Once you have finished your cut, turn off the bandsaw, log out of the access control, and clean up the table
+* Leave the machine in the state you would expect to find it
 
 ## Maintenance
 
 ### General
 
-* If there are any issues, please contact a maintainer listed on the bandsaw wiki page. Example issues: damaged blade, blade out of alignment or terrible noises from moving parts
+* Contact tools@edinburghhacklab.com if anything seems amiss with the saw.
+* Common issues include:
+  * Damage to the blade
+  * Blade out of alignment/not running true
+  * Grinding/squeaking/etc noises from moving parts
 
 ## Other
 
