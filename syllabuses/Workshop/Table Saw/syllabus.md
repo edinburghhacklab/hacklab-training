@@ -18,11 +18,11 @@
 ### Kickback risks
 
 * Ensure riving knife is properly installed:
-  * The radial clearance between saw blade and riving knife
+  * The radial clearance between saw blade and riving knife
 may not exceed 5 mm (max.).
-  * The thickness of the riving knife must be smaller than the
+  * The thickness of the riving knife must be smaller than the
 cutting width and greater than the blade thickness.
-  * The riving knife must always be in a line to the saw blade.
+  * The riving knife must always be in a line to the saw blade.
 * Stand with torso away from the cut line.
 * Ensure the full length of the workpiece is in contact with the parallel guide while cutting.
 * Always use an angle guide when cross-cutting.
@@ -45,7 +45,7 @@ cutting width and greater than the blade thickness.
 * Power off when performing checks
 * Aligned correctly
 * All adjustments tightened
-   * Pay particular attention to the position of the locking lever for locking the saw blade and for adjusting the bevel angle.
+  * Pay particular attention to the position of the locking lever for locking the saw blade and for adjusting the bevel angle.
 * Always adjust the blade guard in such a manner that it faces loosely against the workpiece when
 sawing.
 * Blade guard does not interfere with the workpiece
@@ -56,7 +56,7 @@ sawing.
 ### Workpiece free of any metals (nails, screws), glass etc.
 
 ### Workpiece has a straight factory edge aligned to the parallel guide
- * Do not saw warped/bent workpieces.
+* Do not saw warped/bent workpieces.
 
 ### Wide workpieces must be underlaid or supported at their free end.
 * Check manual on how to pull out the saw-table extension.
@@ -82,8 +82,8 @@ sawing.
 * Set the parallel guide at desired distance and lock it in place.
 
 * Use push sticks and auxiliary guide when cutting narrow pieces (10cm rule of thumb)
-  * Have push sticks ready before starting the cut.
-  * Check manual on how to install auxiliary guide.
+  * Have push sticks ready before starting the cut.
+  * Check manual on how to install auxiliary guide.
 
 * Saw by feeding the workpiece at a uniform rate
 * Ensure that the flat edge of the workpiece must always be touching the parallel guide.
