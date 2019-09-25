@@ -53,6 +53,7 @@
 
 * Both the foot switch and the red button on the bandsaw will cause a VFD stop, and should be used in most situations
 * The E-stop should be pressed in an emergency, this will cut power to the bandsaw
+* Remember to log out if leaving the machine unattended for any period of time
 
 ### General
 
