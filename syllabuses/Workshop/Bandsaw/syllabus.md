@@ -10,7 +10,7 @@
 ### Entanglement risks
 
 * No loose clothing or cables
-* No watches
+* No loose jewellery (e.g. watches)
 * No gloves
 * Long hair must be tied back
 
