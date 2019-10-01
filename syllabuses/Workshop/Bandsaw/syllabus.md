@@ -10,6 +10,7 @@
 ### Entanglement risks
 
 * No loose clothing or cables
+* No watches
 * No gloves
 * Long hair must be tied back
 
@@ -18,6 +19,8 @@
 ### Surrounding area cleared of obstacles
 
 ### Other workshop users alerted to keep clear
+
+* Make sure there are no users that would be at risk of accidentally knocking you while the bandsaw is in operation
 
 ### Table clear of objects
 
@@ -43,6 +46,7 @@
 
 ### Starting of the machine
 
+* Ensure the main ventilation fan is running (especially important for wood)
 * Tap your tag on the access control
 * Release the E-Stop
 * Press the green button on the contactor
