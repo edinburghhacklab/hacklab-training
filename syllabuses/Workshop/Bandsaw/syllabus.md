@@ -24,7 +24,7 @@
 ### Blade set up correctly
 
 * Aligned correctly
-  * Remember to check that the blade doesn't isn't contacting the rollers either side causing them to spin
+  * Remember to check that the blade isn't contacting the rollers either side causing them to spin
 * All adjustments tightened
 * Guard for blade locked into place, set as low as possible
 * No damage to blade
