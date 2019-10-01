@@ -40,6 +40,13 @@
  * Don't stand in line with the rotation of the sander.
  * Be aware that the workpiece may grab and pull the user in, or be flung away. Use the stops and table to prevent this.
 
+ ### Cleanup
+* After sanding as a matter of courtesy to other members, please do the following;
+    * Use the rubber block on the sander to clean up the surface of the belt/disc
+    * Vacuum up any dust that the extraction didn't get
+    * Log out of the sander access control
+    * Return your safety glasses and hearing protection to their correct storage location
+
 ## Maintenance
 ### General
  * If there are any issues, please contact a maintainer listed on the Sander wiki page. Example issues: frayed/torn/damaged belt or disc, main belt out of alignment or terrible noises from moving parts.
