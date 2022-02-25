@@ -40,7 +40,7 @@
  * Don't stand in line with the rotation of the sander.
  * Be aware that the workpiece may grab and pull the user in, or be flung away. Use the stops and table to prevent this.
 
- ### Cleanup
+### Cleanup
 * After sanding as a matter of courtesy to other members, please do the following;
     * Use the rubber block on the sander to clean up the surface of the belt/disc
     * Vacuum up any dust that the extraction didn't get
