@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Edinburgh Hacklab Training Docs</title>
+</head>
+<body>
+    <h1>Edinburgh Hacklab Training Docs</h1>
+{%- set idxs = [] %}
+{%- for key, value in syllabuses.items() recursive %}
+    {%- set depth = idxs|length + 2 %}
+    <h{{depth}}>{{ key }}</h{{depth}}>
+    {%- if value.files %}
+    <p><small>Version: <a href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}">{{ value.version }}</a> - {{ value.commit_date }}</small></p>
+    <ul>
+    {%- for file, filename in  value.files.items() %}
+        <li><a href="{{ filename }}">{{ file }}</a></li>
+    {%- endfor %}
+    </ul>
+    {%- else %}
+    {%- do idxs.append(loop.index) %}
+    {{ loop(value.items()) }}
+    {%- do idxs.pop() %}
+    {%- endif %}
+{%- endfor %}
+<p style="text-align:center;"><small>Last updated: {{ timestr }}</small></p>
+</body>
+</html>
