@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from datetime import datetime
+from datetime import datetime, timezone
 import jinja2
 import os
 import subprocess
@@ -87,7 +87,13 @@ def generate(syallabus_dir, output_dir):
     )
     site_template = env.get_template("training-site.tmpl")
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
-        f.write(site_template.render(syllabuses=syllabuses, timestr=datetime.utcnow()))
+        f.write(
+            site_template.render(
+                syllabuses=syllabuses,
+                title=None,
+                timestr=datetime.now(timezone.utc),
+            )
+        )
 
 
 def nested_set(dic, keys, value):

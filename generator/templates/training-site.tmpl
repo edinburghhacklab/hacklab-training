@@ -1,26 +1,51 @@
 <html>
-<head>
-    <title>Edinburgh Hacklab Training Docs</title>
-</head>
-<body>
-    <h1>Edinburgh Hacklab Training Docs</h1>
-{%- set idxs = [] %}
-{%- for key, value in syllabuses.items() recursive %}
-    {%- set depth = idxs|length + 2 %}
-    <h{{depth}}>{{ key }}</h{{depth}}>
-    {%- if value.files %}
-    <p><small>Version: <a href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}">{{ value.version }}</a> - {{ value.commit_date }}</small></p>
-    <ul>
-    {%- for file, filename in  value.files.items() %}
-        <li><a href="{{ filename }}">{{ file }}</a></li>
-    {%- endfor %}
-    </ul>
-    {%- else %}
-    {%- do idxs.append(loop.index) %}
-    {{ loop(value.items()) }}
-    {%- do idxs.pop() %}
-    {%- endif %}
-{%- endfor %}
-<p style="text-align:center;"><small>Last updated: {{ timestr }}</small></p>
-</body>
+    <head>
+        <title>Edinburgh Hacklab Training Docs</title>
+        <style>
+         body {
+             max-width: 70ch;
+             margin: 1rem auto;
+             font-family: system-ui;
+             color: #212121;
+         }
+         footer { text-align: center; padding: 1rem; }
+         h3 { font-size: 1.5rem; padding: 0.2rem;  border-bottom: 1px solid black; display: block; }
+         h4 { margin: 0.1rem; font-size: 1.3rem; }
+         h4 a { color: inherit; text-decoration: none; font-size: 0.5rem; }
+         li { margin: 0.5rem; }
+         a { text-decoration: none; color: #0d47a1; }
+         a:visited { color: #0d47a1; }
+         a:hover { color: #1266e2; }
+        </style>
+    </head>
+    <body>
+        <h1>Edinburgh Hacklab Training Docs</h1>
+        {%- set idxs = [] %}
+        {%- for key, value in syllabuses.items() recursive %}
+            {%- set depth = idxs|length + 2 %}
+            {% if depth > 2 %}
+                <h{{depth}}>
+                    {{ key }}
+                    {% if value.files %}
+                        <a aria-role="icon" aria-label="version info" href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}" title="Version: {{ value.version }} - {{ value.commit_date }}">&#9432;</a>
+                    {% endif %}
+                </h{{depth}}>
+
+            {% endif %}
+            {%- if value.files %}
+                <ul>
+                    {%- for file, filename in  value.files.items() %}
+                        <li><a href="{{ filename }}">{{ file }}</a></li>
+                    {%- endfor %}
+                </ul>
+            {%- else %}
+                {%- do idxs.append(loop.index) %}
+                {{ loop(value.items()) }}
+                {%- do idxs.pop() %}
+            {%- endif %}
+        {%- endfor %}
+        <footer>
+            <p><small>Last updated: {{ timestr }}</small></p>
+        </footer>
+    </body>
 </html>
