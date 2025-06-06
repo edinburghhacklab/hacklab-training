@@ -47,7 +47,6 @@ def add_syllabus(result, relpath, output_dir):
 
 
 def compile_tex(tex_string, destination_filename):
-    # TODO: create a whole temp directory so we can cleanup after pdflatex
     with NamedTemporaryFile("w", encoding="utf-8") as f:
         f.write(tex_string)
         f.flush()
@@ -83,7 +82,7 @@ def generate(syallabus_dir, output_dir):
                 add_syllabus(result, relpath, output_dir)
 
     env = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(os.path.abspath(".")),
+        loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         extensions=["jinja2.ext.do"],
     )
     site_template = env.get_template("training-site.tmpl")

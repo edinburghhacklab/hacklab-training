@@ -116,7 +116,7 @@ class SyllabusProcessor:
             line_comment_prefix="%#",
             trim_blocks=True,
             autoescape=False,
-            loader=jinja2.FileSystemLoader(os.path.abspath(".")),
+            loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         )
         training_card_template = latex_jinja_env.get_template("training-card.tmpl")
         version = self.get_git_version()
