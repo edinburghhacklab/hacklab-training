@@ -84,6 +84,9 @@ class LatexRenderer(mistune.BaseRenderer):
     def block_text(self, text):
         return escape(text)
 
+    def block_html(self, _text):
+        return ""
+
     def blank_line(self):
         return "\n"
 
