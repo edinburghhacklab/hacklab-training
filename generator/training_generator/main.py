@@ -85,7 +85,7 @@ def generate(syallabus_dir, output_dir):
         loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         extensions=["jinja2.ext.do"],
     )
-    site_template = env.get_template("training-site.tmpl")
+    site_template = env.get_template("training-site.j2.html")
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(
             site_template.render(

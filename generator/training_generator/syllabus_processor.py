@@ -118,14 +118,14 @@ class SyllabusProcessor:
             autoescape=False,
             loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         )
-        training_card_template = latex_jinja_env.get_template("training-card.tmpl")
+        training_card_template = latex_jinja_env.get_template("training-card.j2.tex")
         version = self.get_git_version()
         commit_date = self.get_git_date()
         card = training_card_template.render(
             items=tree.tree[0], version=version, sessions=8
         )
 
-        doc_template = latex_jinja_env.get_template("training-doc.tmpl")
+        doc_template = latex_jinja_env.get_template("training-doc.j2.tex")
         doc = doc_template.render(content=md(s), title=tree.title, version=version)
 
         return SyllabusResult(

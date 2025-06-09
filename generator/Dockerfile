@@ -2,7 +2,7 @@ FROM python:3.12
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt update && apt install -y texlive-latex-base texlive-latex-extra
+RUN apt update && apt install -y texlive-latex-base texlive-latex-extra texlive-fonts-extra
 
 WORKDIR /app
 

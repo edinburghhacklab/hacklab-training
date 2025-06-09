@@ -15,4 +15,5 @@ build-devcontainer:
     docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
 
 devcontainer:
-    docker run -it --rm -v $PWD/..:/home/dev/src -w /home/dev/src/generator -u $(id -u):$(id -g) -e HOME=/home/dev/ hacklab-training-generator-dev bash
+    mkdir -p .cache
+    docker run -it --rm -v $PWD/.cache:/home/dev -v $PWD/..:/home/dev/src -w /home/dev/src/generator -u $(id -u):$(id -g) -e HOME=/home/dev/ hacklab-training-generator-dev bash
