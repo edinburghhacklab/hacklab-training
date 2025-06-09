@@ -40,6 +40,17 @@ def add_syllabus(result, relpath, output_dir):
     files[name + " training doc"] = os.path.join(relpath, training_doc_filename)
     compile_tex(result.doc, os.path.join(dest, training_doc_filename))
 
+    if result.risk_assessment is not None:
+        risk_assessment_filename = "{}-risk-assessment.pdf".format(
+            folders[-1].replace(" ", "-")
+        )
+        files[name + " risk assessment"] = os.path.join(
+            relpath, risk_assessment_filename
+        )
+        compile_tex(
+            result.risk_assessment, os.path.join(dest, risk_assessment_filename)
+        )
+
     version = result.version
     commit_date = result.commit_date
 

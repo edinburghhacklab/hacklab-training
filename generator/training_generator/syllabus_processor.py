@@ -2,8 +2,10 @@ import jinja2
 from latex_renderer import LatexRenderer
 import mistune
 import os
-from os.path import join
+from os.path import join, exists
 import subprocess
+from dataclasses import dataclass
+import latex_renderer
 
 
 class Item:
@@ -15,6 +17,7 @@ class Item:
         self.section_string = parent_section + str(section) + "."
         self.indent = max(level - 3, 0)
         self.children = False
+        self.text = ""
 
     def __iter__(self):
         return iter(self.items)
@@ -31,6 +34,9 @@ class Item:
         # Trim leading chars (since everything is under root&title header) and trailing "."
         return self.section_string[4:-1]
 
+    def __str__(self):
+        return f"<Item name={self.name} level={self.level} section_number={self.section_number} section_string={self.section_string} indent={self.indent} items={list(map(str, self.items))} text='{self.text}'>"
+
 
 class TreeRenderer(mistune.BaseRenderer):
     def reset_tree(self):
@@ -46,6 +52,7 @@ class TreeRenderer(mistune.BaseRenderer):
         self.level = level
 
     def heading(self, text, level, raw=None):
+        self.node_stack[-1].text = self.node_stack[-1].text.removesuffix(text)
         if text not in ["Training", "Evaluation"]:
             if level == self.level + 1:
                 # one level deeper: add new node below current one
@@ -66,6 +73,10 @@ class TreeRenderer(mistune.BaseRenderer):
 
         return super(TreeRenderer, self).heading(text, level, raw)  # type:ignore
 
+    def text(self, text):
+        self.node_stack[-1].text += latex_renderer.escape(text)
+        return super(TreeRenderer, self).text(text)  # type:ignore
+
 
 class Renderer(TreeRenderer, LatexRenderer):
     pass
@@ -77,14 +88,14 @@ def walk(item, level):
         walk(i, level + 1)
 
 
+@dataclass
 class SyllabusResult:
-    def __init__(self, success, error="", card="", doc="", version="", commit_date=""):
-        self.success = success
-        self.error = error
-        self.card = card
-        self.doc = doc
-        self.version = version
-        self.commit_date = commit_date
+    success: bool
+    card: str
+    doc: str
+    version: str
+    commit_date: str
+    risk_assessment: str | None = None
 
 
 class SyllabusProcessor:
@@ -92,13 +103,8 @@ class SyllabusProcessor:
         self.path = path
 
     def generate(self):
-        try:
-            with open(join(self.path, "syllabus.md"), encoding="utf-8") as f:
-                s = f.read()
-        except IOError as e:
-            return SyllabusResult(
-                success=False, error="I/O error({0}): {1}".format(e.errno, e.strerror)
-            )
+        with open(join(self.path, "syllabus.md"), encoding="utf-8") as f:
+            s = f.read()
 
         tree = Renderer()
         md = mistune.Markdown(renderer=tree)
@@ -121,15 +127,33 @@ class SyllabusProcessor:
         training_card_template = latex_jinja_env.get_template("training-card.j2.tex")
         version = self.get_git_version()
         commit_date = self.get_git_date()
+
         card = training_card_template.render(
             items=tree.tree[0], version=version, sessions=8
         )
+        doc = latex_jinja_env.get_template("training-doc.j2.tex").render(
+            content=md(s), title=tree.title, version=version
+        )
 
-        doc_template = latex_jinja_env.get_template("training-doc.j2.tex")
-        doc = doc_template.render(content=md(s), title=tree.title, version=version)
+        risk_assessment = None
+        if exists(join(self.path, "risk-assessment.md")):
+            risk_tree = Renderer()
+            risk_md = mistune.Markdown(renderer=risk_tree)
+            risk_tree.reset_tree()
+            with open(join(self.path, "risk-assessment.md"), encoding="utf-8") as f:
+                risk_md.parse(f.read())
+
+            risk_assessment = latex_jinja_env.get_template(
+                "risk-assessment.j2.tex"
+            ).render(items=risk_tree.tree[0], title=tree.title, version=version)
 
         return SyllabusResult(
-            success=True, doc=doc, card=card, version=version, commit_date=commit_date
+            success=True,
+            doc=doc,
+            card=card,
+            version=version,
+            commit_date=commit_date,
+            risk_assessment=risk_assessment,
         )
 
     def get_git_date(self):
