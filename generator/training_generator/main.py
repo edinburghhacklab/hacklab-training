@@ -34,10 +34,12 @@ def add_syllabus(result, relpath, output_dir):
         folders[-1].replace(" ", "-")
     )
     files[name + " training card"] = os.path.join(relpath, training_card_filename)
+    print("    training card")
     compile_tex(result.card, os.path.join(dest, training_card_filename))
 
     training_doc_filename = "{}-training-doc.pdf".format(folders[-1].replace(" ", "-"))
     files[name + " training doc"] = os.path.join(relpath, training_doc_filename)
+    print("    training doc")
     compile_tex(result.doc, os.path.join(dest, training_doc_filename))
 
     if result.risk_assessment is not None:
@@ -47,6 +49,7 @@ def add_syllabus(result, relpath, output_dir):
         files[name + " risk assessment"] = os.path.join(
             relpath, risk_assessment_filename
         )
+        print("    risk assessment")
         compile_tex(
             result.risk_assessment, os.path.join(dest, risk_assessment_filename)
         )
@@ -82,16 +85,19 @@ def compile_tex(tex_string, destination_filename):
 
 
 def generate(syallabus_dir, output_dir):
+    print("Rendering training documentation...")
     for root, dirs, files in os.walk(syallabus_dir):
         relpath = os.path.relpath(root, syallabus_dir)
         if SYLLABUS_FILENAME in files:
             dirs.clear()
 
+            print("  " + root)
             sp = SyllabusProcessor(root)
             result = sp.generate()
             if result.success:
                 add_syllabus(result, relpath, output_dir)
 
+    print("Rendering landing page...")
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         extensions=["jinja2.ext.do"],
