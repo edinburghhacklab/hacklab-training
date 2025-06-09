@@ -24,6 +24,7 @@ jobs:
       - name: Build
         run: |
           docker run --rm -v $(pwd)/hacklab-training:/material -v $(pwd)/out:/out ${DOCKER_IMAGE_REF}:${{ github.ref_name }} /material /out
+          find out -type f -not -iname '*.pdf' -not -iname '*.html' -delete
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
