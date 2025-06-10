@@ -4,12 +4,14 @@ from datetime import datetime, timezone
 import jinja2
 import os
 import subprocess
-from syllabus_processor import SyllabusProcessor
+from syllabus_processor import (
+    RISK_ASSESSMENT_FILENAME,
+    SYLLABUS_FILENAME,
+    SyllabusProcessor,
+)
 import sys
 from tempfile import NamedTemporaryFile
 from dataclasses import dataclass, field
-
-SYLLABUS_FILENAME = "syllabus.md"
 
 syllabuses = {}
 
@@ -30,17 +32,21 @@ def add_syllabus(result, relpath, output_dir):
     name = folders[-1]
     files = {}
 
-    training_card_filename = "{}-training-card.pdf".format(
-        folders[-1].replace(" ", "-")
-    )
-    files[name + " training card"] = os.path.join(relpath, training_card_filename)
-    print("    training card")
-    compile_tex(result.card, os.path.join(dest, training_card_filename))
+    if result.card is not None:
+        training_card_filename = "{}-training-card.pdf".format(
+            folders[-1].replace(" ", "-")
+        )
+        files[name + " training card"] = os.path.join(relpath, training_card_filename)
+        print("    training card")
+        compile_tex(result.card, os.path.join(dest, training_card_filename))
 
-    training_doc_filename = "{}-training-doc.pdf".format(folders[-1].replace(" ", "-"))
-    files[name + " training doc"] = os.path.join(relpath, training_doc_filename)
-    print("    training doc")
-    compile_tex(result.doc, os.path.join(dest, training_doc_filename))
+    if result.doc is not None:
+        training_doc_filename = "{}-training-doc.pdf".format(
+            folders[-1].replace(" ", "-")
+        )
+        files[name + " training doc"] = os.path.join(relpath, training_doc_filename)
+        print("    training doc")
+        compile_tex(result.doc, os.path.join(dest, training_doc_filename))
 
     if result.risk_assessment is not None:
         risk_assessment_filename = "{}-risk-assessment.pdf".format(
@@ -88,7 +94,7 @@ def generate(syallabus_dir, output_dir):
     print("Rendering training documentation...")
     for root, dirs, files in os.walk(syallabus_dir):
         relpath = os.path.relpath(root, syallabus_dir)
-        if SYLLABUS_FILENAME in files:
+        if any([f in [SYLLABUS_FILENAME, RISK_ASSESSMENT_FILENAME] for f in files]):
             dirs.clear()
 
             print("  " + root)
