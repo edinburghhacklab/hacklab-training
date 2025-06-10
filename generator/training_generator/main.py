@@ -36,7 +36,7 @@ def add_syllabus(result, relpath, output_dir):
         training_card_filename = "{}-training-card.pdf".format(
             folders[-1].replace(" ", "-")
         )
-        files[name + " training card"] = os.path.join(relpath, training_card_filename)
+        files["Training card"] = os.path.join(relpath, training_card_filename)
         print("    training card")
         compile_tex(result.card, os.path.join(dest, training_card_filename))
 
@@ -44,7 +44,7 @@ def add_syllabus(result, relpath, output_dir):
         training_doc_filename = "{}-training-doc.pdf".format(
             folders[-1].replace(" ", "-")
         )
-        files[name + " training doc"] = os.path.join(relpath, training_doc_filename)
+        files["Training doc"] = os.path.join(relpath, training_doc_filename)
         print("    training doc")
         compile_tex(result.doc, os.path.join(dest, training_doc_filename))
 
@@ -52,9 +52,7 @@ def add_syllabus(result, relpath, output_dir):
         risk_assessment_filename = "{}-risk-assessment.pdf".format(
             folders[-1].replace(" ", "-")
         )
-        files[name + " risk assessment"] = os.path.join(
-            relpath, risk_assessment_filename
-        )
+        files["Risk assessment"] = os.path.join(relpath, risk_assessment_filename)
         print("    risk assessment")
         compile_tex(
             result.risk_assessment, os.path.join(dest, risk_assessment_filename)
