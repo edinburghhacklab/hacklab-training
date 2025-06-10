@@ -90,11 +90,14 @@ def compile_tex(tex_string, destination_filename):
                 break
 
 
-def generate(syallabus_dir, output_dir):
+def generate(syallabus_dir, output_dir, folder_filter):
     print("Rendering training documentation...")
     for root, dirs, files in os.walk(syallabus_dir):
         relpath = os.path.relpath(root, syallabus_dir)
-        if any([f in [SYLLABUS_FILENAME, RISK_ASSESSMENT_FILENAME] for f in files]):
+        if (
+            any([f in [SYLLABUS_FILENAME, RISK_ASSESSMENT_FILENAME] for f in files])
+            and folder_filter.lower() in root.lower()
+        ):
             dirs.clear()
 
             print("  " + root)
@@ -141,6 +144,8 @@ def splitpath(path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: {} <syllabus_dir> <output_dir>".format(sys.argv[0]))
+        print("Usage: {} <syllabus_dir> <output_dir> [filter]".format(sys.argv[0]))
         sys.exit()
-    generate(sys.argv[1], sys.argv[2])
+    generate(
+        sys.argv[1], sys.argv[2], " ".join(sys.argv[3:]) if len(sys.argv) >= 4 else ""
+    )

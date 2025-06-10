@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 cd "$(dirname "$0")/.."
-./scripts/generate.sh
+./scripts/generate.sh $@
 xdg-open out/
