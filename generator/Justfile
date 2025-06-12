@@ -9,7 +9,7 @@ fmt:
     uv run ruff format
 
 build:
-    docker build . -t ghcr.io/edinburghhacklab/hacklab-training:master -f Dockerfile
+    docker build . -t ghcr.io/edinburghhacklab/hacklab-training:main -f Dockerfile
 
 build-devcontainer:
     docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
