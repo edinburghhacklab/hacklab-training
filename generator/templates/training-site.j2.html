@@ -11,7 +11,7 @@
          footer { text-align: center; padding: 1rem; }
          h3 { font-size: 1.5rem; padding: 0.2rem;  border-bottom: 1px solid black; display: block; }
          h4 { margin: 0.1rem; font-size: 1.3rem; }
-         h4 a { color: inherit; text-decoration: none; font-size: 0.5rem; }
+         h4 a, h4 a:visited, h4 a:hover { color: inherit !important; text-decoration: none; font-size: 0.5rem; }
          li { margin: 0.5rem; }
          a { text-decoration: none; color: #0d47a1; }
          a:visited { color: #0d47a1; }
@@ -20,6 +20,22 @@
     </head>
     <body>
         <h1>Edinburgh Hacklab Training Docs</h1>
+
+        <p>
+            These are the documents we use for training people how to use our tools.
+        </p>
+
+
+        <ul>
+            <li><strong>Risk assessments</strong> outline the risks of each tool, and the steps we take to control them.</li>
+            <li><strong>Training docs</strong> are summaries of what needs to be taught to use that tool safely, intended to help instructors deliver training.</li>
+            <li><strong>Training cards</strong> are checklists for an instructor to fill out when training someone on that tool. Depending on the tool, we may require that a paper copy of this is filled out.</li>
+        </ul>
+
+        <p>
+            To contribute to these training docs, see <a href="https://github.com/edinburghhacklab/hacklab-training">the github repository</a>. Non-vital information about a tool may belong better on <a href="https://wiki.ehlab.uk">the wiki</a>.
+        </p>
+
         {%- set idxs = [] %}
         {%- for key, value in syllabuses.items() recursive %}
             {%- set depth = idxs|length + 2 %}

@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\newcommand{\docTool}{\VAR{items.name}}
+\newcommand{\docType}{Training Card}
+\newcommand{\docVersion}{\VAR{version}}
+\input{assets/prelude}
+\setlength\parindent{0pt}
+\begin{document}
+
+This card accompanies the training syllabus for this tool, and should be filled in by an instructor authorised to give training for this tool. They will record your progress for each topic as follows:
+
+\begin{enumerate}
+    \item[\textbf{D} -] Topic introduced/demonstrated by instructor.
+    \item[\textbf{1} -] First attempt at exercise by trainee.
+    \item[\textbf{2} -] Exercise completed by trainee with assistance.
+    \item[\textbf{3} -] Exercise completed by trainee, further practice needed.
+    \item[\textbf{4} -] Trainee at satisfactory standard for this topic.
+\end{enumerate}
+
+When all topics in a section have been covered, and you have been evaluated for that section, an instructor will sign next to the section heading. When all sections have been signed off, you will have successfully completed this training program, and should sign at the bottom of this page.
+
+\vspace{1.5em}
+
+\begin{tabularx}{\textwidth}{l|X\VAR{"c|" * sessions}}
+    \textit{ID} & \textit{Topic} & \multicolumn{\VAR{sessions}}{c}{\textit{Progress}} \\
+    \endhead
+\BLOCK{ for item in items recursive }
+\BLOCK{ if item.level == 2 }
+\BLOCK{ if item.children }
+\hline
+    & & \multicolumn{\VAR{sessions}}{c}{} \\
+    \VAR{item.section()} & \multicolumn{1}{l}{\textbf{\VAR{item.name}}} & \multicolumn{\VAR{sessions}}{c}{} \\
+\BLOCK{ endif }
+\BLOCK{ else }
+\hline
+    \VAR{item.section()} &
+    \BLOCK{ if item.indent > 0 }
+        \hspace{\VAR{item.indent * 5}mm}
+    \BLOCK{ endif }
+    \VAR{item.name}
+    \BLOCK{ if item.name.endswith(":") }
+        & \multicolumn{\VAR{sessions}}{c|}{\cellcolor[gray]{.8}}
+    \BLOCK{ else }
+        \VAR{"& " * sessions} \multicolumn{1}{c|}{}
+    \BLOCK{ endif }
+    \\
+\BLOCK{ endif }
+\BLOCK{ if item.children }
+\VAR{ loop(item) }
+\BLOCK{ endif }
+\BLOCK{ endfor }
+\hline
+\end{tabularx}
+
+
+\vspace*{\fill}
+\section*{On completion:}
+
+By signing below, I certify that:
+
+\begin{itemize}
+    \item I have completed the required training material for this tool, as above.
+    \item I have read and understood the associated risk assessment, and will take all possible steps to minimise the risk to myself and others.
+    \item I understand that my access to this tool may be revoked if I act in an unsafe manner, as judged by the tool's administrators or the directors
+\end{itemize}
+
+\begin{tabularx}{\textwidth}{ l  X  l  X }
+  \endhead
+Trainee: &  & Date: & \\ \\
+Trainer: & & &
+\end{tabularx}
+
+\end{document}

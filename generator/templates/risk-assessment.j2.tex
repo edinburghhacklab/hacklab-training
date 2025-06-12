@@ -1,0 +1,56 @@
+\documentclass[a4paper,landscape]{article}
+\newcommand{\docTool}{\VAR{title}}
+\newcommand{\docType}{Risk assessment}
+\newcommand{\docVersion}{\VAR{version}}
+\input{assets/prelude}
+
+\setlength\parindent{0pt}
+\usepackage{xcolor}
+\newcommand*\rot{\rotatebox{90}}
+
+\begin{document}
+
+This table outlines the possible risks that users of this tool should bear in mind. The risk rating, likelihood, and severity are all calculated assuming that the listed control measures are followed.
+If you are uncomfortable with these risks, or are not confident in your ability to use this tool safely, please do not use it.
+
+\vspace{1em}
+
+\begin{tabularx}{\textwidth}{@{}r @{\hspace{3pt}} l|l|l|l|l|X}
+& \rot{Risk rating} & \rot{Likelihood} & \rot{Severity} & Hazard & Who may be harmed \& how & Control measures \\
+\endhead
+\BLOCK{for item in items}
+\hline
+
+
+\BLOCK{set values = namespace(riskrating='?', likelihood='?', severity='?', who = '?', control='?')}
+
+\BLOCK{for subitem in item.items}
+\BLOCK{if subitem.name == 'Risk rating' }
+\BLOCK{set values.riskrating = subitem.text}
+\BLOCK{elif subitem.name == 'Likelihood' }
+\BLOCK{set values.likelihood = subitem.text}
+\BLOCK{elif subitem.name == 'Severity' }
+\BLOCK{set values.severity = subitem.text}
+\BLOCK{elif 'Who may be harmed' in subitem.name }
+\BLOCK{set values.who = subitem.text}
+\BLOCK{elif subitem.name == 'Control measures' }
+\BLOCK{set values.control = subitem.text}
+\BLOCK{endif}
+\BLOCK{endfor}
+
+\BLOCK{if values.riskrating == 'H'}
+\BLOCK{set barcolor = 'red'}
+\BLOCK{elif values.riskrating == 'M'}
+\BLOCK{set barcolor = 'orange'}
+\BLOCK{elif values.riskrating == 'L'}
+\BLOCK{set barcolor = 'yellow'}
+\BLOCK{else}
+\BLOCK{set barcolor = 'black'}
+\BLOCK{endif}
+
+{\color{\VAR{barcolor}}\vrule width 3pt} & \VAR{values.riskrating} &\VAR{values.likelihood} & \VAR{values.severity} & \VAR{item.name} & \VAR{values.who} & \VAR{values.control} \\
+\BLOCK{endfor}
+
+\end{tabularx}
+
+\end{document}

@@ -1,0 +1,41 @@
+\usepackage[top=2cm,left=2cm,right=2cm,bottom=2cm,headsep=0.25cm,nomarginpar]{geometry}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{ltablex}
+\usepackage{colortbl}
+\usepackage[]{fancyhdr}
+\usepackage{titlesec}
+\usepackage[sfdefault]{inter}
+\keepXColumns
+
+% Include a vertically centered graphic inline (used for footer)
+\newcommand{\vcenteredinclude}[2]{\begingroup
+\setbox0=\hbox{\includegraphics[#1]{#2}}%
+\parbox{\wd0}{\box0}\endgroup}
+
+% Headers + footers
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\large\textbf\docTool}
+\fancyhead[R]{\large\textbf\docType}
+\fancyfoot{}
+\fancyfoot[L]{\vcenteredinclude{height=0.75cm}{./assets/logo}\hspace{0.5em} training.ehlab.uk}
+\fancyfoot[R]{Version \docVersion, \thepage\ / \pageref{LastPage}}
+\renewcommand{\footrulewidth}{1pt}
+
+% Typography
+\titleformat{\section}[block]
+{\normalfont\bfseries}
+{\thesection.}{0.5em}{}
+\titlespacing{\section}{0pt}{0.5em}{0.5em}
+\titleformat{\subsection}[block]
+{\normalfont}
+{\thesubsection.}{0.5em}{}
+\titlespacing{\subsection}{0pt}{0.5em}{0.5em}
+
+% Spacing
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headruleskip}{0pt}
+\setlist{itemsep=0.25em, parsep=0.25em, topsep=0.25em, labelindent=\parindent}
+\renewcommand{\arraystretch}{1.2}

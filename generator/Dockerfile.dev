@@ -6,5 +6,5 @@ RUN wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg 
     . /etc/os-release && \
     echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $VERSION_CODENAME" | tee /etc/apt/sources.list.d/prebuilt-mpr.list
 
-RUN apt update && apt install -y texlive-latex-base texlive-latex-extra just
+RUN apt update && apt install -y texlive-latex-base texlive-latex-extra just texlive-fonts-extra
 RUN mkdir -p /home/dev && chmod 777 /home/dev

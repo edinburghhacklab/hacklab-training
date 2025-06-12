@@ -2,8 +2,13 @@ import jinja2
 from latex_renderer import LatexRenderer
 import mistune
 import os
-from os.path import join
+from os.path import join, exists
 import subprocess
+from dataclasses import dataclass
+import latex_renderer
+
+SYLLABUS_FILENAME = "syllabus.md"
+RISK_ASSESSMENT_FILENAME = "risk-assessment.md"
 
 
 class Item:
@@ -15,6 +20,7 @@ class Item:
         self.section_string = parent_section + str(section) + "."
         self.indent = max(level - 3, 0)
         self.children = False
+        self.text = ""
 
     def __iter__(self):
         return iter(self.items)
@@ -31,6 +37,9 @@ class Item:
         # Trim leading chars (since everything is under root&title header) and trailing "."
         return self.section_string[4:-1]
 
+    def __str__(self):
+        return f"<Item name={self.name} level={self.level} section_number={self.section_number} section_string={self.section_string} indent={self.indent} items={list(map(str, self.items))} text='{self.text}'>"
+
 
 class TreeRenderer(mistune.BaseRenderer):
     def reset_tree(self):
@@ -46,6 +55,7 @@ class TreeRenderer(mistune.BaseRenderer):
         self.level = level
 
     def heading(self, text, level, raw=None):
+        self.node_stack[-1].text = self.node_stack[-1].text.removesuffix(text)
         if text not in ["Training", "Evaluation"]:
             if level == self.level + 1:
                 # one level deeper: add new node below current one
@@ -66,6 +76,10 @@ class TreeRenderer(mistune.BaseRenderer):
 
         return super(TreeRenderer, self).heading(text, level, raw)  # type:ignore
 
+    def text(self, text):
+        self.node_stack[-1].text += latex_renderer.escape(text)
+        return super(TreeRenderer, self).text(text)  # type:ignore
+
 
 class Renderer(TreeRenderer, LatexRenderer):
     pass
@@ -77,35 +91,20 @@ def walk(item, level):
         walk(i, level + 1)
 
 
+@dataclass
 class SyllabusResult:
-    def __init__(self, success, error="", card="", doc="", version="", commit_date=""):
-        self.success = success
-        self.error = error
-        self.card = card
-        self.doc = doc
-        self.version = version
-        self.commit_date = commit_date
+    success: bool
+    version: str
+    commit_date: str
+    card: str | None = None
+    doc: str | None = None
+    risk_assessment: str | None = None
 
 
 class SyllabusProcessor:
     def __init__(self, path):
         self.path = path
-
-    def generate(self):
-        try:
-            with open(join(self.path, "syllabus.md"), encoding="utf-8") as f:
-                s = f.read()
-        except IOError as e:
-            return SyllabusResult(
-                success=False, error="I/O error({0}): {1}".format(e.errno, e.strerror)
-            )
-
-        tree = Renderer()
-        md = mistune.Markdown(renderer=tree)
-        tree.reset_tree()
-        md.parse(s)
-
-        latex_jinja_env = jinja2.Environment(
+        self.latex_jinja_env = jinja2.Environment(
             block_start_string="\\BLOCK{",
             block_end_string="}",
             variable_start_string="\\VAR{",
@@ -118,18 +117,47 @@ class SyllabusProcessor:
             autoescape=False,
             loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         )
-        training_card_template = latex_jinja_env.get_template("training-card.tmpl")
+
+    def generate(self):
+        card = None
+        doc = None
         version = self.get_git_version()
         commit_date = self.get_git_date()
-        card = training_card_template.render(
-            items=tree.tree[0], version=version, sessions=8
-        )
+        if exists(join(self.path, SYLLABUS_FILENAME)):
+            with open(join(self.path, SYLLABUS_FILENAME), encoding="utf-8") as f:
+                s = f.read()
 
-        doc_template = latex_jinja_env.get_template("training-doc.tmpl")
-        doc = doc_template.render(content=md(s), title=tree.title, version=version)
+            tree = Renderer()
+            md = mistune.Markdown(renderer=tree)
+            tree.reset_tree()
+            md.parse(s)
+
+            card = self.latex_jinja_env.get_template("training-card.j2.tex").render(
+                items=tree.tree[0], version=version, sessions=8
+            )
+            doc = self.latex_jinja_env.get_template("training-doc.j2.tex").render(
+                content=md(s), title=tree.title, version=version
+            )
+
+        risk_assessment = None
+        if exists(join(self.path, RISK_ASSESSMENT_FILENAME)):
+            tree = Renderer()
+            md = mistune.Markdown(renderer=tree)
+            tree.reset_tree()
+            with open(join(self.path, RISK_ASSESSMENT_FILENAME), encoding="utf-8") as f:
+                md.parse(f.read())
+
+            risk_assessment = self.latex_jinja_env.get_template(
+                "risk-assessment.j2.tex"
+            ).render(items=tree.tree[0], title=tree.title, version=version)
 
         return SyllabusResult(
-            success=True, doc=doc, card=card, version=version, commit_date=commit_date
+            success=True,
+            doc=doc,
+            card=card,
+            version=version,
+            commit_date=commit_date,
+            risk_assessment=risk_assessment,
         )
 
     def get_git_date(self):
