@@ -1,0 +1,18 @@
+run *FLAGS:
+    uv run ./main.py {{ FLAGS }}
+
+lint:
+    uv run ruff check
+    uv run pyright
+
+fmt:
+    uv run ruff format
+
+build:
+    docker build . -t ghcr.io/edinburghhacklab/hacklab-training:master -f Dockerfile
+
+build-devcontainer:
+    docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
+
+devcontainer:
+    docker run -it --rm -v $PWD/..:/home/dev/src -w /home/dev/src/generator -u $(id -u):$(id -g) -e HOME=/home/dev/ hacklab-training-generator-dev bash
