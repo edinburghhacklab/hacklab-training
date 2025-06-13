@@ -20,9 +20,11 @@ The training materials are generated from the markdown files in this repo, which
 
 To preview your built changes locally, run `./scripts/open.sh` or ``./scripts/generate.sh` from the root of the repo. This requires docker to be working - if this is a problem consider using `shell.ehlab.uk`. You can also add a case insensitive filter to the end of the command to speed things up, ie `./scripts/generate.sh workshop`
 
-If you're adding a new tool, run `./scripts/new-tool.sh <tool name> <tool location>`, ie `./scripts/new-tool.sh "CNC Mill" "Workshop"`
+If you're adding a new tool, run `./scripts/new-tool.sh <tool name> <tool location>`, ie `./scripts/new-tool.sh "CNC Mill" "Workshop"`.
 
-If you want to mess with the code that does the generation, see [`generator/README.md`](./generator/README.md)
+If you want to mess with the code that does the generation, see [`generator/README.md`](./generator/README.md).
+
+For more advice on what needs written, and how to write it, see [the `tooldocs`](https://wiki.ehlab.uk/tooldocs) wiki page.
 
 ### Common pitfalls
 

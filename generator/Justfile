@@ -1,5 +1,5 @@
 run *FLAGS:
-    uv run ./main.py {{ FLAGS }}
+    uv run ./training_generator/main.py {{ FLAGS }}
 
 lint:
     uv run ruff check
@@ -11,7 +11,7 @@ fmt:
 build:
     docker build . -t ghcr.io/edinburghhacklab/hacklab-training:main -f Dockerfile
 
-build-devcontainer:
+build-devcontainer: build
     docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
 
 devcontainer:

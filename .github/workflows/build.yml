@@ -6,8 +6,49 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 jobs:
+  docker-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            docker-rebuild:
+              - '.github/workflows/**'
+              - 'generator/**'
+
+      - name: Log in to the Container registry
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        uses: docker/login-action@v3.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        id: meta
+        uses: docker/metadata-action@v5.7.0
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+      - name: Build and push
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        uses: docker/build-push-action@v6
+        with:
+          context: "generator"
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
   build:
     runs-on: ubuntu-latest
+    needs: docker-rebuild
     steps:
       - uses: actions/checkout@v2
         with:
