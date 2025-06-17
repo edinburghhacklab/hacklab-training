@@ -65,10 +65,13 @@ def add_syllabus(result, relpath, output_dir):
 
 
 def compile_tex(tex_string, destination_filename):
+    BUILD_LIMIT = 10
     with NamedTemporaryFile("w", encoding="utf-8") as f:
         f.write(tex_string)
         f.flush()
-        for i in range(5):
+        output = "Rerun LaTeX"
+        num_builds = 0
+        while "Rerun LaTeX" in str(output):
             try:
                 output = subprocess.check_output(
                     [
@@ -84,8 +87,9 @@ def compile_tex(tex_string, destination_filename):
             except subprocess.CalledProcessError as e:
                 print(e.output.decode())
                 raise
-            if "Rerun LaTeX" not in str(output):
-                break
+            num_builds += 1
+            if num_builds > BUILD_LIMIT:
+                raise
 
 
 def generate(syallabus_dir, output_dir, folder_filter):
