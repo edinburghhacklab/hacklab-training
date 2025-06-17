@@ -66,12 +66,13 @@ def add_syllabus(result, relpath, output_dir):
 
 def compile_tex(tex_string, destination_filename):
     BUILD_LIMIT = 10
+    RERUN_STRINGS = ["Rerun LaTeX", "Rerun to get the"]
     with NamedTemporaryFile("w", encoding="utf-8") as f:
         f.write(tex_string)
         f.flush()
         output = "Rerun LaTeX"
         num_builds = 0
-        while "Rerun LaTeX" in str(output):
+        while any([s in (output) for s in RERUN_STRINGS]):
             try:
                 output = subprocess.check_output(
                     [
@@ -83,7 +84,7 @@ def compile_tex(tex_string, destination_filename):
                         f.name,
                     ],
                     timeout=5,
-                )
+                ).decode("utf-8")
             except subprocess.CalledProcessError as e:
                 print(e.output.decode())
                 raise
