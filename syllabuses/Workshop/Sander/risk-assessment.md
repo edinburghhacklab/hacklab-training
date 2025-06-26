@@ -22,8 +22,8 @@ L
 
 - Signage - signage is displayed showing warnings and PPE for the sander
 - Training - informing the user about how to tell that the sander is running, the risks of using a sander,
-  what PPE should be worn, and how to turn off the sander.
-- Equipment - Appropriate gloves and clothing must be worn, an emergency stop button is installed, first aid kit available
+  what PPE should be worn, and how to turn off the sander, fingers should be kept 10 cm away from sanding surface
+- Equipment - Appropriate clothing must be worn, an emergency stop button is installed, first aid kit available
 
 ## Injuries due to losing grip on substrate
 
