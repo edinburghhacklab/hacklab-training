@@ -12,7 +12,7 @@ Python dependencies are handled by `uv`. non-python dependencies are:
  -  texlive-latex-base
  -  texlive-latex-extra
 
-For most development, it's easiest to run `just build-devcontainer` and `just devcontainer`, then `uv run ./training_generator main.py .. out/`.
+For most development, it's easiest to run `just build-devcontainer` and `just devcontainer`, then `uv run ./training_generator/main.py .. out/`.
 
 Please also use `just fmt lint` before PRing.
 
