@@ -21,7 +21,7 @@ M
 ### Control measures
 
 - Signage - standard "moving blades" signage, signage showing required PPE
-- Training - users trained in safe use of bandsaw, instructed to keep hands out of path of the bandsaw
+- Training - users trained in safe use of bandsaw, instructed to keep hands out of path of the bandsaw, training enforced by access control
 - Equipment - an emergency stop button is installed, first aid kit available
 
 ## Injuries due to kickback
@@ -45,8 +45,8 @@ M
 
 ### Control measures
 
-- Signage - signage is displayed showing warnings and PPE for the sander
-- Training - users trained in safe use of bandsaw, instructed on how to decrease risk of kickback
+- Signage - signage is displayed showing warnings and PPE for the bandsaw
+- Training - users trained in safe use of bandsaw, instructed on how to decrease risk of kickback, training enforced by access control
 - Equipment - appropriate closed-toe footwear and eye protection must be worn, first aid kit available
 
 ## Hearing damage
