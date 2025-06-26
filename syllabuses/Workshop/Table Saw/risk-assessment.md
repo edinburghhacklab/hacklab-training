@@ -1,4 +1,4 @@
-# Bandsaw
+# Table saw
 
 ## Injuries due contact with body
 
@@ -20,9 +20,9 @@ M
 
 ### Control measures
 
-- Signage - standard "moving blades" signage, signage showing required PPE
-- Training - users trained in safe use of bandsaw, instructed to keep hands out of path of the bandsaw
-- Equipment - an emergency stop button is installed, first aid kit available
+- Signage - standard "moving blades" signage, signage showing required PPE, signage showing safe hand distance and saw path
+- Training - users trained in safe use of table saw, instructed to keep hands out of path of the table saw
+- Equipment - saw stowed down while not cutting, first aid kit available
 
 ## Injuries due to kickback
 
@@ -45,8 +45,8 @@ M
 
 ### Control measures
 
-- Signage - signage is displayed showing warnings and PPE for the sander
-- Training - users trained in safe use of bandsaw, instructed on how to decrease risk of kickback
+- Signage - signage is displayed showing warnings and PPE for the table saw
+- Training - users trained in safe use of table saw, instructed on how to decrease risk of kickback
 - Equipment - appropriate closed-toe footwear and eye protection must be worn, first aid kit available
 
 ## Hearing damage
@@ -65,8 +65,8 @@ L
 
 ### Who may be harmed & how
 
-- User - the user may sustain damage to hearing due to the loud operation of the bandsaw with some materials
-- Bystander - a bystander may sustain damage to hearing due to the loud operation of the bandsaw with some materials
+- User - the user may sustain damage to hearing due to the loud operation of the table saw with some materials
+- Bystander - a bystander may sustain damage to hearing due to the loud operation of the table saw with some materials
 
 ### Control measures
 
@@ -90,15 +90,15 @@ L
 
 ### Who may be harmed & how
 
-- Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced
+- Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced 
   by sawing of the substrate
 
 ### Control measures
 
 - Signage - signage particulate hazards and recommended PPE are displayed
-- Extraction - an extraction device is installed to extract particles produced during sanding of substrate
 - Training - users are instructed to wear appropriate PPE
-- Equipment - users must wear appropriate eye protection and an FFP2 (N95) rated respirator or mask, eye wash kit is available
+- Equipment - extractor is installed, users must wear appropriate eye protection and an FFP2 (N95) rated respirator or
+  mask, eye wash kit is available
 
 ## Body part or clothing is caught in moving parts
 
@@ -123,4 +123,4 @@ L
 
 - Signage - signage indicating moving parts and pinch points is displayed
 - Training - users are instructed to remove or secure loose clothing and long hair
-- Equipment - an emergency stop button is installed, first aid kit available
+- Equipment - first aid kit available
