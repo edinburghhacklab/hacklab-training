@@ -4,7 +4,7 @@
 
 ### Severity
 
-M   
+M
 
 ### Likelihood
 
@@ -44,14 +44,14 @@ L
 - User - the user may be hit by the substrate at high speeds due to the high friction and speed of the sander resulting
   in injuries. the user may be hit by the substrate falling.
 - Bystanders - a bystander may be hit by the substrate at high speeds due to the high friction and speed of the sander resulting
-  in injuries.
+  in injuries
 
 ### Control measures
 
 - Signage - signage is displayed showing warnings and PPE for the sander
 - Training - informing the user about how to tell that the sander is running, the risks of using a sander,
   what PPE should be worn, and how to turn off the sander.
-- Equipment - Appropriate gloves and steel-toed boots must be worn, first aid kit available
+- Equipment - Appropriate closed-toe footwear must be worn, first aid kit available
 
 ## Hearing damage
 
@@ -125,6 +125,6 @@ L
 
 ### Control measures
 
-- Signage - signage indicating high noise levels and recommended PPE are displayed
+- Signage - signage indicating moving parts and pinch points is displayed
 - Training - users are instructed to remove or secure loose clothing and long hair
 - Equipment - an emergency stop button is installed, first aid kit available
