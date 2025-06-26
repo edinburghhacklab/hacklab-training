@@ -55,9 +55,21 @@ jobs:
           path: hacklab-training
           fetch-depth: 0
 
+      - name: Check if this branch has its own docker image
+        id: check_image
+        run: |
+          IMAGE_NAME="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}"
+          if docker pull $IMAGE_NAME; then
+            echo "Image exists"
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "Image does not exist"
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Build
         run: |
-          docker run --rm -v $(pwd)/hacklab-training:/material -v $(pwd)/out:/out ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }} /material /out
+          docker run --rm -v $(pwd)/hacklab-training:/material -v $(pwd)/out:/out ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.check_image.exists == 'true' && github.ref_name || 'main' }} /material /out
           sudo find out -type f -not -iname '*.pdf' -not -iname '*.html' -delete
 
       - name: Upload artifact
