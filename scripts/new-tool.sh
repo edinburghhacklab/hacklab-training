@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -euo pipefail
+
 cd "$(dirname "$0")/.."
 if [[ $# -lt 2 ]]; then
     echo "Usage: $0 <tool name> <tool location>"
