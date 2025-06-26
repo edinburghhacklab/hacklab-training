@@ -35,6 +35,10 @@ H
 
 L
 
+### Risk rating
+
+L
+
 ### Who may be harmed & how
 
 - The space - the equipment and surrounding area may become damaged from a fire started by a flammable material placed
@@ -59,6 +63,10 @@ L
 
 L
 
+### Risk rating
+
+L
+
 ### Who may be harmed & how
 
 - User - the user may experience injuries such as cuts and stretch or crush injuries
@@ -79,9 +87,13 @@ M
 
 L
 
+### Risk rating
+
+L
+
 ### Who may be harmed & how
 
-- Users of the room - anyone in the room may sustain injury from inhalation of hazardous gasses produced by heated 
+- Users of the room - anyone in the room may sustain injury from inhalation of hazardous gasses produced by heated
   thermoplastics
 
 ### Control measures
