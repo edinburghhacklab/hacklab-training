@@ -1,36 +1,125 @@
-# Mitre Saw
+# Mitre saw
 
-<!-- Each thing below becomes a row in the table - copy it for each risk that's been identified.
-     Please delete all the comments from the final document -->
-
-## A thing that might go wrong
+## Injuries due contact with body
 
 ### Severity
 
-<!-- How bad it is if the thing happens. H, M, or L. -->
 H
 
 ### Likelihood
 
-<!-- How likely something is, *after* the control measures listed below. H, M, or L. -->
-H
+M
 
 ### Risk rating
 
-<!-- If both likelihood and severity are H, this is H
-     If one of likelihood and severity is L, and the other is L or M, this is L
-     Otherwise, this is M -->
-H
+M
 
 ### Who may be harmed & how
 
-<!-- Usually some combination of:
-       User
-       Bystander
-       Users of the room
-       The space
-       Following user -->
+- User - the user may be injured by deep cuts on the cutting edge or irritation and abrasion on the other sides
 
 ### Control measures
 
-<!-- Anything that's in here should also be in the syllabus somewhere, to ensure it's actually practised. -->
+- Signage - standard "moving blades" signage, signage showing required PPE
+- Training - users trained in safe use of mitre saw, instructed to keep hands out of path of the mitre saw, training enforced by access control
+- Equipment - first aid kit available
+
+## Injuries due to kickback
+
+### Severity
+
+M
+
+### Likelihood
+
+M
+
+### Risk rating
+
+M
+
+### Who may be harmed & how
+
+- User - the user may be hit by the substrate propelled by kickback or by the substrate falling.
+- Bystanders - a bystander may be hit by the substrate propelled by kickback
+
+### Control measures
+
+- Signage - signage is displayed showing warnings and PPE for the mitre saw
+- Training - users trained in safe use of mitre saw, instructed on how to decrease risk of kickback, training enforced by access control
+- Equipment - appropriate closed-toe footwear and eye protection must be worn, first aid kit available
+
+## Hearing damage
+
+### Severity
+
+M
+
+### Likelihood
+
+L
+
+### Risk rating
+
+L
+
+### Who may be harmed & how
+
+- User - the user may sustain damage to hearing due to the loud operation of the mitre saw with some materials
+- Bystander - a bystander may sustain damage to hearing due to the loud operation of the mitre saw with some materials
+
+### Control measures
+
+- Signage - signage indicating high noise levels, recommended PPE, and loud materials are displayed
+- Training - users are instructed to use appropriate PPE, advised which materials may produce loud operation
+- Equipment - users use hearing protection such as ear plugs or ear defenders during operation
+
+## Injury due to airborne particles
+
+### Severity
+
+M
+
+### Likelihood
+
+L
+
+### Risk rating
+
+L
+
+### Who may be harmed & how
+
+- Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced 
+  by sawing of the substrate
+
+### Control measures
+
+- Signage - signage particulate hazards and recommended PPE are displayed
+- Training - users are instructed to wear appropriate PPE
+- Equipment - users must wear appropriate eye protection and an FFP2 (N95) rated respirator or mask, eye wash kit is available
+
+## Body part or clothing is caught in moving parts
+
+### Severity
+
+M
+
+### Likelihood
+
+L
+
+### Risk rating
+
+L
+
+### Who may be harmed & how
+
+- User - the user may experience injuries such as stretch, crush, or pinch injuries and cuts, irritation or abrasion
+  from the blade
+
+### Control measures
+
+- Signage - signage indicating moving parts and pinch points is displayed
+- Training - users are instructed to remove or secure loose clothing and long hair
+- Equipment - first aid kit available
