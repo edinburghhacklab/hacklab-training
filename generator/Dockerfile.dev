@@ -5,6 +5,6 @@ RUN wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg 
     echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $VERSION_CODENAME" | tee /etc/apt/sources.list.d/prebuilt-mpr.list
 RUN apt-get update && apt-get install -y just sudo
 
-RUN chmod 777 /root/.TinyTeX && chmod 711 /root
+RUN chmod -R 777 /root
 RUN mkdir -p /home/dev && chmod 777 /home/dev
 ENTRYPOINT /bin/bash
