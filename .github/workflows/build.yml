@@ -1,63 +1,96 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Build
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-20.04
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+  docker-rebuild:
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            docker-rebuild:
+              - '.github/workflows/**'
+              - 'generator/**'
+
+      - name: Log in to the Container registry
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        uses: docker/login-action@v3.4.0
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        id: meta
+        uses: docker/metadata-action@v5.7.0
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+      - name: Build and push
+        if: steps.filter.outputs.docker-rebuild == 'true'
+        uses: docker/build-push-action@v6
+        with:
+          context: "generator"
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+  build:
+    runs-on: ubuntu-latest
+    needs: docker-rebuild
+    steps:
       - uses: actions/checkout@v2
         with:
           path: hacklab-training
+          fetch-depth: 0
 
-      - uses: actions/checkout@v2
-        with:
-          path: gh-pages
-          ref: gh-pages
-
-      - uses: actions/checkout@v2
-        with:
-          repository: edinburghhacklab/hacklab-training-generator
-          path: hacklab-training-generator
-
-      - name: Install dependencies
+      - name: Check if this branch has its own docker image
+        id: check_image
         run: |
-          sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python3-jinja2 python3-mistune texlive-base texlive-latex-extra texlive-fonts-recommended 
+          IMAGE_NAME="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}"
+          if docker pull $IMAGE_NAME; then
+            echo "Image exists"
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "Image does not exist"
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
 
       - name: Build
         run: |
-          # unshallow so we can see last commit of each file
-          cd hacklab-training
-          git fetch --unshallow
-          cd ..
-          # build the PDFs
-          cd hacklab-training-generator
-          ./generate.py ../hacklab-training ../gh-pages
-          cd ..
-          # commit to gh-pages branch
-          cd gh-pages
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add *.html
-          git add **/*.pdf
-          git commit -m "generated"
-          git push
+          docker run --rm -v $(pwd)/hacklab-training:/material -v $(pwd)/out:/out ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.check_image.exists == 'true' && github.ref_name || 'main' }} /material /out
+          sudo find out -type f -not -iname '*.pdf' -not -iname '*.html' -delete
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out/
+  deploy:
+    needs: build
+    if: github.ref_name == github.event.repository.default_branch
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
