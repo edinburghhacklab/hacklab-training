@@ -18,7 +18,7 @@ The training materials are generated from the markdown files in this repo, which
 
 `syllabus.md` becomes the training doc, and each header becomes an item in the training card. Each level 2 (`##`) header in `risk-assessment.md` becomes a row in the risk assessment, and the subheaders are used to populate the columns.
 
-To preview your built changes locally, run `./scripts/open.sh` or ``./scripts/generate.sh` from the root of the repo. This requires docker to be working - if this is a problem consider using `shell.ehlab.uk`. You can also add a case insensitive filter to the end of the command to speed things up, ie `./scripts/generate.sh workshop`
+To preview your built changes locally, run `./scripts/open.sh` or `./scripts/generate.sh` from the root of the repo. This requires docker to be working - if this is a problem consider using `shell.ehlab.uk`. You can also add a case insensitive filter to the end of the command to speed things up, ie `./scripts/generate.sh workshop`
 
 If you're adding a new tool, run `./scripts/new-tool.sh <tool name> <tool location>`, ie `./scripts/new-tool.sh "CNC Mill" "Workshop"`.
 
