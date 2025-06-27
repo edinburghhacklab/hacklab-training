@@ -1,4 +1,4 @@
-# Handheld Circular Saw
+# Circular Saw
 
 ## Safety
 
