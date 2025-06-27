@@ -76,9 +76,15 @@ class TreeRenderer(mistune.BaseRenderer):
 
         return super(TreeRenderer, self).heading(text, level, raw)  # type:ignore
 
-    def text(self, text):
-        self.node_stack[-1].text += latex_renderer.escape(text)
-        return super(TreeRenderer, self).text(text)  # type:ignore
+    def list(self, body, depth, ordered=True):
+        out = super(TreeRenderer, self).list(body, depth, ordered)  # type:ignore
+        self.node_stack[-1].text += out
+        return out
+
+    def paragraph(self, text):
+        out = super(TreeRenderer, self).paragraph(text)  # type:ignore
+        self.node_stack[-1].text += out
+        return out
 
 
 class Renderer(TreeRenderer, LatexRenderer):
