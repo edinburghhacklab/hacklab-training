@@ -1,5 +1,7 @@
 # Small Laser Cutter
 
+<!-- Last reviewed: 2025-06-27 -->
+
 ## Safety
 
 ### Materials
@@ -35,12 +37,10 @@
 
 * Check there are no obstacles for when the laser cutter moves to the home position
 * Tap your tag on the access control
-* Ensure the external extractor fan is running (TODO: audible noise but no easy
-  way to confirm this and it's shared by multiple tools)
+* Ensure the external extractor fan is running
 * Release the E-Stop
 * Power on the machine (green button/key switch)
 * Ensure the internal air assist/pump is running (unless cutting paper)
-* Ensure the chiller is running (Big Laser Cutter only, TODO: how to check this)
 
 ### Stopping of the machine
 
@@ -60,7 +60,7 @@
 
 ### General
 
-* Know how to power-up the cutter and checking that the extraction, water
+* Know how to power-up the cutter and check that the extraction, water
   cooling and air assist are working
 * Know which materials may be cut safely, that some plastics may produce
   chlorine or cyanide gases, and that some materials may catch fire more easily
@@ -71,7 +71,6 @@
 * Setting appropriate power/speeds for different materials
 * Using the cutter's control panel to move the head/carriage
 * Positioning the workpiece and setting Z (vertical) alignment
-* Focusing the laser (Big Laser Cutter only)
 * Using the test button before cutting
 
 ### Materials
@@ -82,10 +81,9 @@
   * Laser safe silicone rubber
   * Laser safe vinyl
   * Paper/cardboard
-  * Glass (engraving only)
   * PLA (short cuts only)
 * Unacceptable materials include:
-  * Metal (engraving only, preparation required)
+  * Metal
 * Consult the complete list of materials on the wiki page
 * Ask a maintainer if you are unsure of suitability
 
