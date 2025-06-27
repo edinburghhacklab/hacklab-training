@@ -6,6 +6,7 @@ from os.path import join, exists
 import subprocess
 from dataclasses import dataclass
 import latex_renderer
+from pathlib import Path
 
 SYLLABUS_FILENAME = "syllabus.md"
 RISK_ASSESSMENT_FILENAME = "risk-assessment.md"
@@ -138,6 +139,9 @@ class SyllabusProcessor:
             tree.reset_tree()
             md.parse(s)
 
+            assert tree.title.replace("\\", "") == Path(self.path).name, (
+                f"File title ({tree.title}) should match directory its in ({self.path})"
+            )
             card = self.latex_jinja_env.get_template("training-card.j2.tex").render(
                 items=tree.tree[0], version=version, sessions=8
             )
@@ -153,6 +157,9 @@ class SyllabusProcessor:
             with open(join(self.path, RISK_ASSESSMENT_FILENAME), encoding="utf-8") as f:
                 md.parse(f.read())
 
+            assert tree.title.replace("\\", "") == Path(self.path).name, (
+                f"File title ({tree.title}) should match directory its in ({self.path})"
+            )
             risk_assessment = self.latex_jinja_env.get_template(
                 "risk-assessment.j2.tex"
             ).render(items=tree.tree[0], title=tree.title, version=version)
