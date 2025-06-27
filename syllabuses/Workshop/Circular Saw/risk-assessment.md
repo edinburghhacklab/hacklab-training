@@ -1,4 +1,4 @@
-# Handheld Circular Saw
+# Circular Saw
 
 ## Injuries due to contact with blade
 
