@@ -1,4 +1,4 @@
-# Laser-cutting
+# Small Laser Cutter
 
 ## Injuries due to laser light
 
@@ -23,7 +23,7 @@ M
 - Signage - standard "laser radiation" signage is used to indicate a dangerous laser is present
 - Training - informing the user about how to tell that the laser cutter and the laser is on and to properly operate the
   laser cutter
-- Equipment - opaque walls and a sheet blocking the laser wavelength covers the laser cutter, an interlock is installed 
+- Equipment - opaque walls and a sheet blocking the laser wavelength covers the laser cutter, an interlock is installed
   turning off the laser cutter when lid is opened, first aid kit is available
 
 ## Fire started due to substrate overheating

@@ -1,4 +1,4 @@
-# Bandsaw
+# Small Laser Cutter
 
 ## Safety
 

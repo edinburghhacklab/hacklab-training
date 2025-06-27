@@ -1,4 +1,4 @@
-# Table saw
+# Table Saw
 
 ## Injuries due contact with body
 
@@ -90,7 +90,7 @@ L
 
 ### Who may be harmed & how
 
-- Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced 
+- Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced
   by sawing of the substrate
 
 ### Control measures

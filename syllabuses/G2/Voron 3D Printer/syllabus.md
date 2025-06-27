@@ -1,4 +1,4 @@
-# Voron 3D Printers
+# Voron 3D Printer
 
 <!-- There is no prescribed structure, but here is a suggestion: -->
 
