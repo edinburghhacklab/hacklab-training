@@ -95,7 +95,9 @@ M
 
 ### Who may be harmed & how
 
-Everybody in the room and/or the space, the machine, the space itself -- in case a fire breaks out.
+Everybody in the room and/or the space, the space itself -- in case a fire breaks out.
+
+The machine may get damaged, which could make it less safe for other users.
 
 ### Control measures
 
@@ -134,7 +136,9 @@ M
 
 ### Who may be harmed & how
 
-User, the machine, other people in the room -- fatigue makes other mistakes more likely to happen.
+User, other people in the room -- fatigue makes other mistakes more likely to happen.
+
+The machine may get damaged, which could make it less safe for other users.
 
 ### Control measures
 
@@ -153,9 +157,10 @@ L
 
 ### Who may be harmed & how
 
-The machine may get damaged.
 User, bystander -- trapped objects may become airborne.
 Improper attempts to resolve the problem can lead to body parts or clothes getting trapped.
+
+The machine may get damaged, which could make it less safe for other users.
 
 ### Control measures
 
@@ -171,14 +176,14 @@ L
 M
 
 ### Risk rating
-L
+M
 
 ### Who may be harmed & how
 
-User -- may be hit by an object sent flying.
+User and bystander -- may be hit by an object sent flying.
 The object may get stuck on the spindle and start spinning and shaking violently.
 
-The machine may get damaged.
+The machine may get damaged, which could make it less safe for other users.
 Can lead to other issues such as the tool or workpiece overheating.
 
 ### Control measures
