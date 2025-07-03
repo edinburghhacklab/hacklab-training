@@ -22,14 +22,13 @@
 ### Lid
 
 * Do not operate if the lid doesn't stay open on its own
-* Users may hit their head on the lid when arranging materials
 
 ## Startup checks
 
-### Enclosure is intact and all access panels are closed
+### Enclosure is intact and access panel is closed
 
-* Check the laser enclosure and viewing windows aren't damaged
-* Check all access panels are locked closed
+* Check the laser enclosure and viewing window isn't damaged
+* Check the access panel is locked closed
 
 ## Usage
 
@@ -39,8 +38,8 @@
 * Tap your tag on the access control
 * Ensure the external extractor fan is running
 * Release the E-Stop
-* Power on the machine (green button/key switch)
-* Ensure the internal air assist/pump is running (unless cutting paper)
+* Power on the machine (key switch)
+* Ensure the internal air pump is running (unless cutting paper)
 
 ### Stopping of the machine
 
@@ -69,9 +68,13 @@
   should not usually be used above 25C, and how to check the temperature
 * Basic use of the software
 * Setting appropriate power/speeds for different materials
-* Using the cutter's control panel to move the head/carriage
+* Using the cutter's control panel to move the head/carriage (don't move it
+  outside the allowed area because there is no protection against this)
 * Positioning the workpiece and setting Z (vertical) alignment
-* Using the test button before cutting
+  * The 60cm alignment tool should be placed on the material at the left of the
+    laser head/carriage and be made flush with the top of it
+* Using the test button before cutting (the red light indicates the outer
+  boundary of the cutting/engraving area)
 
 ### Materials
 
