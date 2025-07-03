@@ -1,7 +1,5 @@
 # Small Laser Cutter
 
-<!-- Last reviewed: 2025-06-27 -->
-
 ## Safety
 
 ### Materials
