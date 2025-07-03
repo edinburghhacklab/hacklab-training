@@ -1,4 +1,4 @@
-# Soldering
+# Soldering Irons
 
 ## Burn due to hot-end of soldering iron
 
@@ -86,7 +86,7 @@ L
 
 H
 
-### Likelihood 
+### Likelihood
 
 L
 
