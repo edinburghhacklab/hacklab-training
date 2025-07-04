@@ -91,7 +91,7 @@ class LatexRenderer(mistune.BaseRenderer):
         return "\n"
 
     def softbreak(self):
-        return ""
+        return " "
 
     # HACK: Copied from the HTML renderer, seems to indicate something is using an old API somewhere?
     def render_token(self, token: dict[str, Any], state) -> str:
