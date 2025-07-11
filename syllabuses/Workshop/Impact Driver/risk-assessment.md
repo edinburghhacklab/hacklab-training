@@ -4,15 +4,15 @@
 
 ### Severity
 
-M
+L
 
 ### Likelihood
 
-M
+L
 
 ### Risk rating
 
-M
+L
 
 ### Who may be harmed & how
 
@@ -29,15 +29,15 @@ M
 
 ### Severity
 
-M
+L
 
 ### Likelihood
 
-H
+L
 
 ### Risk rating
 
-M
+L
 
 ### Who may be harmed & how
 
@@ -57,11 +57,11 @@ L
 
 ### Likelihood
 
-M
+L
 
 ### Risk rating
 
-M
+L
 
 ### Who may be harmed & how
 
@@ -80,7 +80,7 @@ L
 
 ### Likelihood
 
-M
+L
 
 ### Risk rating
 

@@ -17,7 +17,7 @@
 ### Other workshop users alerted to use eye and hearing protection.
 ### Correct speed setting.
 
-### General
+## General
  * Identification and selection of correct tool for the job.
  * Identification and selection of correct driver bits.
  * Torque / speed settings.
@@ -26,7 +26,7 @@
  * Required pressure on screw.
  * Work should be suitably secured to not spin dangerously.
 
-### Cleanup
+## Cleanup
  * Put bits away in correct places. Keep sorted. Keep impact bits with impact driver, in locker.
 
 ## Maintenance
