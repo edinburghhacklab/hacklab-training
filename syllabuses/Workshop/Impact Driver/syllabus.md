@@ -10,7 +10,6 @@
  * Long hair must be tied back.
  * Hand must be kept away from work.
 
-### Note powerful and requires careful handling
 ### Note screws may be hot after screwing.
 
 ## Startup checks
@@ -18,17 +17,16 @@
 ### Correct speed setting.
 
 ## General
- * Identification and selection of correct tool for the job.
- * Identification and selection of correct driver bits.
- * Torque / speed settings.
- * Batteries - condition, charging.
- * Tool handling. Grip.
- * Required pressure on screw.
- * Work should be suitably secured to not spin dangerously.
+### Identification and selection of correct tool for the job.
+### Identification and selection of correct driver bits.
+### Torque / speed settings.
+### Tool handling. Grip.
+### Required pressure on screw.
+### Work should be suitably secured to not spin dangerously.
+### Batteries - condition, charging.
 
 ## Cleanup
  * Put bits away in correct places. Keep sorted. Keep impact bits with impact driver, in locker.
 
 ## Maintenance
-### General
  * Report faults to tool maintainers / workshop group / directors.
