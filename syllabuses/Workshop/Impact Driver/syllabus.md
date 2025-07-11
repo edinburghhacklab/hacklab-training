@@ -1,4 +1,4 @@
-# Impact driver
+# Impact Driver
 
 ## Safety
 ### PPE
