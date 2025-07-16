@@ -35,12 +35,12 @@
 
 * Check there are no obstacles for when the laser cutter moves to the home position
 * Tap your tag on the access control
-* Ensure the external extractor fan is running (TODO: audible noise but no easy
-  way to confirm this and it's shared by multiple tools)
+* Ensure the external extractor fan is running
 * Release the E-Stop
-* Power on the machine (green button/key switch)
-* Ensure the internal air assist/pump is running (unless cutting paper)
-* Ensure the chiller is running (Big Laser Cutter only, TODO: how to check this)
+* Power on the machine (green button)
+* Ensure the internal air assist is running (unless cutting paper)
+* Ensure the chiller is running
+  * If it is not, alarm will continue sounding for more than a second and machine should not be used.
 
 ### Stopping of the machine
 
@@ -60,7 +60,7 @@
 
 ### General
 
-* Know how to power-up the cutter and checking that the extraction, water
+* Know how to power-up the cutter and check that the extraction, water
   cooling and air assist are working
 * Know which materials may be cut safely, that some plastics may produce
   chlorine or cyanide gases, and that some materials may catch fire more easily
@@ -69,10 +69,15 @@
   should not usually be used above 25C, and how to check the temperature
 * Basic use of the software
 * Setting appropriate power/speeds for different materials
-* Using the cutter's control panel to move the head/carriage
+* Using the cutter's control panel to move the head/carriage (don't move it
+  outside the allowed area because there is no protection against this)
 * Positioning the workpiece and setting Z (vertical) alignment
-* Focusing the laser (Big Laser Cutter only)
-* Using the test button before cutting
+* Focusing the laser
+  * Place the 12mm focusing cylinder on the material under the laser and loosen
+    the ring on the laser head/carriage to drop it onto the material so that the
+    air flow stops, then tighten the ring and remove the focusing cylinder
+* Using the test button before cutting (the red light indicates the outer
+  boundary of the cutting/engraving area)
 
 ### Materials
 

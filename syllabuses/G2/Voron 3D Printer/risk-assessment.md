@@ -1,4 +1,4 @@
-# Prusa 3D Printers
+# Voron 3D Printer
 
 ## Burn due to hotplate or hot-end
 

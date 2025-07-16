@@ -1,4 +1,4 @@
-# Planer-thicknesser
+# Planer-Thicknesser
 
 ## Hearing damage
 
