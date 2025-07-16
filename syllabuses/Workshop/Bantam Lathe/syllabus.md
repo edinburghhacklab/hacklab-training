@@ -10,14 +10,25 @@
 
 ### Risks
 
-#### Entangling risks
+#### Entangling, pinching and trapping risks
 - No loose clothing.
 - No loose jewellery (i.e. rings, watches) or accessories (i.e. cables).
 - No gloves.
 - Long hair must be tied back.
+- Chuck guard must be lowered when lathe is in operation.
+- Hands must only be places on the controls when the lathe is in operation.
+
+#### Flying object risks
+- The tool must be properly secured to the toolpost.
+- The workpiece must be properly secured in the chuck.
+- The chuck must be properly secured to the headstock spindle.
+- The work area and machine ways must be clear.
+
+#### Abrasion and impact risks
+- The user may be burned, abraded, or have fingers broken if they touch moving parts of the machine.
 
 #### Stock, swarf and chip risks
-- Wood or flammable metals (magnesium, titanium) dust and swarf must be immediately cleaned up.
+- Wood or flammable metals (magnesium, titanium) dust and swarf must be immediately cleaned up using appropriate tools.
 - Sharp chips may fly.
 - Stock, workpieces, and tools may all have sharp edges.
 - Stock and workpiece may become very hot during cutting.
