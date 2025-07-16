@@ -15,8 +15,7 @@ build-devcontainer: build
     docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
 
 build-devcontainer-aarch64:
-    export DOCKER_DEFAULT_PLATFORM=linux/amd64
-    just build-devcontainer
+    export DOCKER_DEFAULT_PLATFORM=linux/amd64 && just build-devcontainer
 
 devcontainer:
     mkdir -p .cache
