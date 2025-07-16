@@ -10,14 +10,25 @@
 
 ### Risks
 
-#### Entangling risks
+#### Entangling, pinching and trapping risks
 - No loose clothing.
 - No loose jewellery (i.e. rings, watches) or accessories (i.e. cables).
 - No gloves.
 - Long hair must be tied back.
+- Chuck guard must be lowered when lathe is in operation.
+- Hands must only be places on the controls when the lathe is in operation.
+
+#### Flying object risks
+- The tool must be properly secured to the toolpost.
+- The workpiece must be properly secured in the chuck.
+- The chuck must be properly secured to the headstock spindle.
+- The work area and machine ways must be clear.
+
+#### Abrasion and impact risks
+- The user may be burned, abraded, or have fingers broken if they touch moving parts of the machine.
 
 #### Stock, swarf and chip risks
-- Wood or flammable metals (magnesium, titanium) dust and swarf must be immediately cleaned up.
+- Wood or flammable metals (magnesium, titanium) dust and swarf must be immediately cleaned up using appropriate tools.
 - Sharp chips may fly.
 - Stock, workpieces, and tools may all have sharp edges.
 - Stock and workpiece may become very hot during cutting.
@@ -56,7 +67,7 @@
 - The gear should only ever be changed when the lathe is turned off and is stationary.
 - Once a gear is selected, the chuck should be manually rotated a full turn to ensure smooth movement.
 
-### The table is clear of the workpiece.
+### The cross slide is clear of the workpiece.
 
 ## Usage
 
@@ -70,10 +81,12 @@
 - Keep foot on or near brake at all times.
 
 ### Loading and Unloading Tools
-- Lock toolholder in table
-- Verify height of tool
-    - Close chuck jaws and bring cutter to near centre
-    - Tool should be in line with centre of chuck
+- Lock toolholder in cross slide.
+- Verify height of tool.
+    - Close chuck jaws and bring cutter to near centre.
+    - Tool should be in line with centre of chuck.
+- Verify alignment of tool.
+    - Tool should be at a 2-3º angle relative to face of chuck, with cutting edge closer to chuck than tool body.
 
 ### Changing Chuck
 - Move each of the sockets until the mark on the socket lines up with the mark on the body.
@@ -85,6 +98,21 @@
 - Press the red button next to the VFD.
 - Log out.
 - Press in the e-stop.
+
+### Cutting at an angle
+- Use the correct spanner to loosen the slide bolt.
+- Lock in at correct angle.
+- Return to 0º upon finishing.
+
+### Drilling
+- Chuck drillbit into endstop.
+- Advance slowly, applying cutting fluid as necesary.
+- Back out before stopping machine.
+
+### Parting
+- Part as close to the chuck as possible.
+- Do not use the tailstock during parting operations.
+- If necessary, regrind the tool. Afterwards, ensure cutting edge is below centre of workpiece.
 
 <!-- incl estops if necessary -->
 
@@ -99,5 +127,6 @@
 ## Maintenance
 
 ### General
+- More oil will need to  be added when the sightglass indicates it is low.
 
 ## Other
