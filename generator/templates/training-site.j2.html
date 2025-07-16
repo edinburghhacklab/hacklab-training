@@ -9,9 +9,11 @@
              color: #212121;
          }
          footer { text-align: center; padding: 1rem; }
-         h3 { font-size: 1.5rem; padding: 0.2rem;  border-bottom: 1px solid black; display: block; }
-         h4 { display: block;  margin: 0.1rem; font-size: 1.3rem; }
-         h4 a, h4 a:visited, h4 a:hover { color: inherit !important; text-decoration: none; font-size: 0.8rem; float: right; }
+         summary {border-bottom: 1px solid black;}
+         .h3 { font-size: 1.5rem; padding: 0.2rem;   display: inline-block; font-weight: bold; margin-top: 20px;}
+         .h4:nth-child(2) { margin-top: 10px; }
+         .h4 { display: block;  margin: 0.1rem; font-size: 1.3rem; font-weight: bold}
+         .h4 a, .h4 a:visited, .h4 a:hover { color: inherit !important; text-decoration: none; font-size: 0.8rem; float: right; }
          li { margin: 0.5rem; }
          a { text-decoration: none; color: #0d47a1; }
          a:visited { color: #0d47a1; }
@@ -39,13 +41,23 @@
         {%- set idxs = [] %}
         {%- for key, value in syllabuses.items() recursive %}
             {%- set depth = idxs|length + 2 %}
+            {% if depth == 3 %}
+                </details>
+                <details>
+            {% endif %}
             {% if depth > 2 %}
-                <h{{depth}}>
+                {% if depth == 3 %}
+                    <summary>
+                {% endif %}
+                <div class="h{{depth}}">
                     {{ key }}
                     {% if value.files %}
                         <a href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}">Version: {{ value.version }} - {{ value.commit_date }}</a>
                     {% endif %}
-                </h{{depth}}>
+                </div>
+                {% if depth == 3 %}
+                    </summary>
+                {% endif %}
 
             {% endif %}
             {%- if value.files %}

@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
-
-from datetime import datetime, timezone
-import jinja2
 import os
 import subprocess
-from syllabus_processor import (
-    RISK_ASSESSMENT_FILENAME,
-    SYLLABUS_FILENAME,
-    SyllabusProcessor,
-)
 import sys
+from dataclasses import dataclass
+from dataclasses import field
+from datetime import datetime
+from datetime import timezone
 from tempfile import NamedTemporaryFile
-from dataclasses import dataclass, field
+
+import jinja2
+
+from syllabus_processor import RISK_ASSESSMENT_FILENAME
+from syllabus_processor import SYLLABUS_FILENAME
+from syllabus_processor import SyllabusProcessor
 
 syllabuses = {}
 
@@ -32,6 +33,7 @@ def add_syllabus(result, relpath, output_dir):
     name = folders[-1]
     files = {}
 
+    print(folders[-1])
     if result.card is not None:
         training_card_filename = "{}-training-card.pdf".format(
             folders[-1].replace(" ", "-")
@@ -95,6 +97,8 @@ def compile_tex(tex_string, destination_filename):
 
 def generate(syallabus_dir, output_dir, folder_filter):
     print("Rendering training documentation...")
+
+    syllabi = []
     for root, dirs, files in os.walk(syallabus_dir):
         relpath = os.path.relpath(root, syallabus_dir)
         if (
@@ -103,11 +107,14 @@ def generate(syallabus_dir, output_dir, folder_filter):
         ):
             dirs.clear()
 
-            print("  " + root)
             sp = SyllabusProcessor(root)
             result = sp.generate()
             if result.success:
-                add_syllabus(result, relpath, output_dir)
+                syllabi.append((result, relpath, output_dir,))
+
+    sorted_syllabi = sorted(syllabi, key=lambda x: x[1])
+    for item in sorted_syllabi:
+        add_syllabus(item[0], item[1], item[2])
 
     print("Rendering landing page...")
     env = jinja2.Environment(

@@ -10,10 +10,6 @@ M
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 User
@@ -32,10 +28,6 @@ H
 
 L
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 The space, and any users in it
@@ -51,10 +43,6 @@ Area around to be kept clear of flammable materials. Tool not to be left on unat
 M
 
 ### Likelihood
-
-M
-
-### Risk rating
 
 M
 
@@ -75,10 +63,6 @@ L
 ### Likelihood
 
 H
-
-### Risk rating
-
-M
 
 ### Who may be harmed & how
 

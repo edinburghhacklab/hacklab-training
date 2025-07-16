@@ -10,10 +10,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may have a minor burn due to the high temperature of the hot-end of the soldering iron
@@ -33,10 +29,6 @@ L
 H
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -64,10 +56,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of hazardous gasses
@@ -89,10 +77,6 @@ H
 ### Likelihood
 
 L
-
-### Risk rating
-
-M
 
 ### Who may be harmed & how
 

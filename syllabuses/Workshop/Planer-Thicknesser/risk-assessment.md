@@ -10,10 +10,6 @@ H
 
 L
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - the user may sustain damage to hearing due to the loud operation of the planer thicknesser
@@ -32,10 +28,6 @@ M
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -58,10 +50,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

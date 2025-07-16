@@ -10,10 +10,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may have irritated, abraded, or peeled skin due to contact with the moving surface of the sander
@@ -32,10 +28,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -63,10 +55,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may sustain damage to hearing due to the loud operation of the sander
@@ -85,10 +73,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -111,10 +95,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

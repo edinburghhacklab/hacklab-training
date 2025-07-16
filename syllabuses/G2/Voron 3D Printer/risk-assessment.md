@@ -10,10 +10,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may have a minor burn due to the high temperature of the hotplate and hot-end of the 3D printer
@@ -32,10 +28,6 @@ L
 H
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -63,10 +55,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may experience injuries such as cuts and stretch or crush injuries
@@ -84,10 +72,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

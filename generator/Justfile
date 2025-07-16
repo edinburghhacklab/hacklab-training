@@ -14,6 +14,9 @@ build:
 build-devcontainer: build
     docker build . -t hacklab-training-generator-dev -f Dockerfile.dev
 
+build-devcontainer-aarch64:
+    export DOCKER_DEFAULT_PLATFORM=linux/amd64 && just build-devcontainer
+
 devcontainer:
     mkdir -p .cache
     docker run -it --rm -v $PWD/.cache:/home/dev -v $PWD/..:/home/dev/src -w /home/dev/src/generator -u $(id -u):$(id -g) -e HOME=/home/dev/ hacklab-training-generator-dev bash
