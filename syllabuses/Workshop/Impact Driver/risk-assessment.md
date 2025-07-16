@@ -10,10 +10,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User and bystanders - may be hit by shrapnel from shattered bits and
@@ -32,10 +28,6 @@ L
 L
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -59,10 +51,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may injure a hand which is near the driver screw if the
@@ -79,10 +67,6 @@ L
 L
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

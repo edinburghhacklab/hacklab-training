@@ -10,10 +10,6 @@ H
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - may sustain deep lacerations or amputations due to accidental contact with the rotating blade
@@ -32,10 +28,6 @@ M
 M
 
 ### Likelihood
-
-M
-
-### Risk rating
 
 M
 
@@ -60,10 +52,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User – may sustain hearing damage from prolonged exposure to cutting noise
@@ -85,10 +73,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - Users and bystanders – may inhale dust or have particles enter eyes, especially when cutting MDF or treated wood
@@ -106,10 +90,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

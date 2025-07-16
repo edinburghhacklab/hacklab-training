@@ -12,10 +12,6 @@ H
 
 L
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - the user may experience a minor skin burn, or damage to the eyes due to the high power of the laser used for cutting
@@ -37,10 +33,6 @@ H
 ### Likelihood
 
 L
-
-### Risk rating
-
-M
 
 ### Who may be harmed & how
 
@@ -68,10 +60,6 @@ L
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may experience injuries such as cuts and stretch, crush, or pinch injuries
@@ -90,10 +78,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

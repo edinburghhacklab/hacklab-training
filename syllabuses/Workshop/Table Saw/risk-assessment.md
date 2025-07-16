@@ -10,10 +10,6 @@ H
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - the user may be injured by deep cuts on the cutting edge or irritation and abrasion on the other sides
@@ -31,10 +27,6 @@ M
 M
 
 ### Likelihood
-
-M
-
-### Risk rating
 
 M
 
@@ -59,10 +51,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may sustain damage to hearing due to the loud operation of the table saw with some materials
@@ -81,10 +69,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -107,10 +91,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

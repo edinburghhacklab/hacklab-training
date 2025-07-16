@@ -10,10 +10,6 @@ H
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - may sustain deep cuts or amputations from contact with moving disc
@@ -32,10 +28,6 @@ M
 H
 
 ### Likelihood
-
-M
-
-### Risk rating
 
 M
 
@@ -60,10 +52,6 @@ M
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User – burns from hot surfaces or sparks
@@ -82,10 +70,6 @@ M
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
@@ -110,10 +94,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - Users and others – may inhale fine dust or abrasive particles
@@ -131,10 +111,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 

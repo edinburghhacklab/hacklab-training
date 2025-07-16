@@ -15,13 +15,6 @@ H
 <!-- How likely something is, *after* the control measures listed below. H, M, or L. -->
 H
 
-### Risk rating
-
-<!-- If both likelihood and severity are H, this is H
-     If one of likelihood and severity is L, and the other is L or M, this is L
-     Otherwise, this is M -->
-H
-
 ### Who may be harmed & how
 
 <!-- Usually some combination of:

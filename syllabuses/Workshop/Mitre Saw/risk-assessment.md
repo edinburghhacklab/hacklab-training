@@ -10,10 +10,6 @@ H
 
 M
 
-### Risk rating
-
-M
-
 ### Who may be harmed & how
 
 - User - the user may be injured by deep cuts on the cutting edge or irritation and abrasion on the other sides
@@ -31,10 +27,6 @@ M
 M
 
 ### Likelihood
-
-M
-
-### Risk rating
 
 M
 
@@ -59,10 +51,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - User - the user may sustain damage to hearing due to the loud operation of the mitre saw with some materials
@@ -84,10 +72,6 @@ M
 
 L
 
-### Risk rating
-
-L
-
 ### Who may be harmed & how
 
 - Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced
@@ -106,10 +90,6 @@ L
 M
 
 ### Likelihood
-
-L
-
-### Risk rating
 
 L
 
