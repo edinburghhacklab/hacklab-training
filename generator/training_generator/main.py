@@ -6,10 +6,13 @@ from dataclasses import dataclass
 from dataclasses import field
 from datetime import datetime
 from datetime import timezone
+from os import listdir
+from os.path import isfile
+from os.path import join
+from shutil import copytree
 from tempfile import NamedTemporaryFile
 
 import jinja2
-
 from syllabus_processor import RISK_ASSESSMENT_FILENAME
 from syllabus_processor import SYLLABUS_FILENAME
 from syllabus_processor import SyllabusProcessor
@@ -121,6 +124,11 @@ def generate(syallabus_dir, output_dir, folder_filter):
         loader=jinja2.FileSystemLoader(os.path.abspath("./templates")),
         extensions=["jinja2.ext.do"],
     )
+
+    background_dir = "assets/backgrounds"    
+    copytree(background_dir, os.path.join(output_dir, "backgrounds"), dirs_exist_ok=True)
+    onlyfiles = [f"./backgrounds/{f}" for f in listdir(background_dir) if isfile(join(background_dir, f))]
+
     site_template = env.get_template("training-site.j2.html")
     with open(os.path.join(output_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(
@@ -128,6 +136,7 @@ def generate(syallabus_dir, output_dir, folder_filter):
                 syllabuses=syllabuses,
                 title=None,
                 timestr=datetime.now(timezone.utc),
+                images=onlyfiles
             )
         )
 

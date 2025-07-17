@@ -2,78 +2,103 @@
     <head>
         <title>Edinburgh Hacklab Training Docs</title>
         <style>
-         body {
-             max-width: 70ch;
-             margin: 1rem auto;
-             font-family: system-ui;
-             color: #212121;
-         }
-         footer { text-align: center; padding: 1rem; }
-         summary {border-bottom: 1px solid black;}
-         .h3 { font-size: 1.5rem; padding: 0.2rem;   display: inline-block; font-weight: bold; margin-top: 20px;}
-         .h4:nth-child(2) { margin-top: 10px; }
-         .h4 { display: block;  margin: 0.1rem; font-size: 1.3rem; font-weight: bold}
-         .h4 a, .h4 a:visited, .h4 a:hover { color: inherit !important; text-decoration: none; font-size: 0.8rem; float: right; }
-         li { margin: 0.5rem; }
-         a { text-decoration: none; color: #0d47a1; }
-         a:visited { color: #0d47a1; }
-         a:hover { color: #1266e2; }
+            body {
+                max-width: 70ch;
+                margin: 1rem auto;
+                font-family: system-ui;
+                color: #212121;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            footer { text-align: center; padding: 1rem; }
+            summary {border-bottom: 1px solid black;}
+            .h3 { font-size: 1.5rem; padding: 0.2rem;   display: inline-block; font-weight: bold; margin-top: 20px;}
+            .h4:nth-child(2) { margin-top: 10px; }
+            .h4 { display: block;  margin: 0.1rem; font-size: 1.3rem; font-weight: bold}
+            .h4 a, .h4 a:visited, .h4 a:hover { color: inherit !important; text-decoration: none; font-size: 0.8rem; float: right; }
+            li { margin: 0.5rem; }
+            a { text-decoration: none; color: #0d47a1; }
+            a:visited { color: #0d47a1; }
+            a:hover { color: #1266e2; }
+            .body {
+                padding: 50px;
+                height: auto;
+                box-shadow: 0 0 25px 25px white;
+                background-color: white;
+                min-height: 100vh;
+            }
         </style>
+
+        <script>
+            function randomImage(){
+                console.log({{images}})
+                var images = {{images}}
+                var size = images.length;
+                var x = Math.floor(size * Math.random());
+                var element = document.body
+                element.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, 0.75)), url("+ images[x] + ")";
+            }
+
+            document.addEventListener("DOMContentLoaded", randomImage);
+        </script>
     </head>
     <body>
-        <h1>Edinburgh Hacklab Training Docs</h1>
+        <div class="body">
+            <h1>Edinburgh Hacklab Training Docs</h1>
 
-        <p>
-            These are the documents we use for training people how to use our tools.
-        </p>
+            <p>
+                These are the documents we use for training people how to use our tools.
+            </p>
 
 
-        <ul>
-            <li><strong>Risk assessments</strong> outline the risks of each tool, and the steps we take to control them.</li>
-            <li><strong>Training docs</strong> are summaries of what needs to be taught to use that tool safely, intended to help instructors deliver training.</li>
-            <li><strong>Training cards</strong> are checklists for an instructor to fill out when training someone on that tool. Depending on the tool, we may require that a paper copy of this is filled out.</li>
-        </ul>
+            <ul>
+                <li><strong>Risk assessments</strong> outline the risks of each tool, and the steps we take to control them.</li>
+                <li><strong>Training docs</strong> are summaries of what needs to be taught to use that tool safely, intended to help instructors deliver training.</li>
+                <li><strong>Training cards</strong> are checklists for an instructor to fill out when training someone on that tool. Depending on the tool, we may require that a paper copy of this is filled out.</li>
+            </ul>
 
-        <p>
-            To contribute to these training docs, see <a href="https://github.com/edinburghhacklab/hacklab-training">the github repository</a>. Non-vital information about a tool may belong better on <a href="https://wiki.ehlab.uk">the wiki</a>.
-        </p>
+            <p>
+                To contribute to these training docs, see <a href="https://github.com/edinburghhacklab/hacklab-training">the github repository</a>. Non-vital information about a tool may belong better on <a href="https://wiki.ehlab.uk">the wiki</a>.
+            </p>
 
-        {%- set idxs = [] %}
-        {%- for key, value in syllabuses.items() recursive %}
-            {%- set depth = idxs|length + 2 %}
-            {% if depth == 3 %}
-                </details>
-                <details>
-            {% endif %}
-            {% if depth > 2 %}
+            {%- set idxs = [] %}
+            {%- for key, value in syllabuses.items() recursive %}
+                {%- set depth = idxs|length + 2 %}
                 {% if depth == 3 %}
-                    <summary>
+                    </details>
+                    <details>
                 {% endif %}
-                <div class="h{{depth}}">
-                    {{ key }}
-                    {% if value.files %}
-                        <a href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}">Version: {{ value.version }} - {{ value.commit_date }}</a>
+                {% if depth > 2 %}
+                    {% if depth == 3 %}
+                        <summary>
                     {% endif %}
-                </div>
-                {% if depth == 3 %}
-                    </summary>
-                {% endif %}
+                    <div class="h{{depth}}">
+                        {{ key }}
+                        {% if value.files %}
+                            <a href="https://github.com/edinburghhacklab/hacklab-training/commit/{{ value.version }}">Version: {{ value.version }} - {{ value.commit_date }}</a>
+                        {% endif %}
+                    </div>
+                    {% if depth == 3 %}
+                        </summary>
+                    {% endif %}
 
-            {% endif %}
-            {%- if value.files %}
-                <ul>
-                    {%- for file, filename in  value.files.items() %}
-                        <li><a href="{{ filename }}">{{ file }}</a></li>
-                    {%- endfor %}
-                </ul>
-            {%- else %}
-                {%- do idxs.append(loop.index) %}
-                {{ loop(value.items()) }}
-                {%- do idxs.pop() %}
-            {%- endif %}
-        {%- endfor %}
-        <footer>
-            <p><small>Last updated: {{ timestr }}</small></p>
-        </footer>
+                {% endif %}
+                {%- if value.files %}
+                    <ul>
+                        {%- for file, filename in  value.files.items() %}
+                            <li><a href="{{ filename }}">{{ file }}</a></li>
+                        {%- endfor %}
+                    </ul>
+                {%- else %}
+                    {%- do idxs.append(loop.index) %}
+                    {{ loop(value.items()) }}
+                    {%- do idxs.pop() %}
+                {%- endif %}
+            {%- endfor %}
+            <footer>
+                <p><small>Last updated: {{ timestr }}</small></p>
+            </footer>
+        </div>
     </body>
 </html>
