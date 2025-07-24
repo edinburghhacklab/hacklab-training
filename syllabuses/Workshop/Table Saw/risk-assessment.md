@@ -1,6 +1,8 @@
 # Table Saw
 
-## Injuries due contact with body
+<!-- Last reviewed: 2025-07-15 by Gandolf and Aria -->
+
+## Injuries due to contact with body
 
 ### Severity
 
@@ -12,13 +14,13 @@ M
 
 ### Who may be harmed & how
 
-- User - the user may be injured by deep cuts on the cutting edge or irritation and abrasion on the other sides
+- User - the user may be injured by deep cuts from the cutting edge, or irritation and abrasion from the side of the blade
 
 ### Control measures
 
 - Signage - standard "moving blades" signage, signage showing required PPE, signage showing safe hand distance and saw path
-- Training - users trained in safe use of table saw, instructed to keep hands out of path of the table saw
-- Equipment - saw stowed down while not cutting, first aid kit available
+- Training - users will be trained in safe use of table saw, and must keep hands out of path of the table saw
+- Equipment - saw stowed while not cutting, first aid kit available
 
 ## Injuries due to kickback
 
@@ -58,9 +60,9 @@ L
 
 ### Control measures
 
-- Signage - signage indicating high noise levels, recommended PPE, and loud materials are displayed
-- Training - users are instructed to use appropriate PPE, advised which materials may produce loud operation
-- Equipment - users use hearing protection such as ear plugs or ear defenders during operation
+- Equipment - users must use provided hearing protection during operation
+- Training - users are instructed to use appropriate PPE
+- Signage - signage indicating high noise levels and required PPE
 
 ## Injury due to airborne particles
 
@@ -75,20 +77,20 @@ L
 ### Who may be harmed & how
 
 - Users of the room - anyone in the room may sustain injury from inhalation or contact with eyes of small particles produced
-  by sawing of the substrate
+  by sawing of certain materials
 
 ### Control measures
 
-- Signage - signage particulate hazards and recommended PPE are displayed
-- Training - users are instructed to wear appropriate PPE
+- Signage - particulate hazards and recommended PPE are displayed
+- Training - users are instructed to wear appropriate PPE, and on appropriate materials
 - Equipment - extractor is installed, users must wear appropriate eye protection and an FFP2 (N95) rated respirator or
-  mask, eye wash kit is available
+  mask for applicable materials, eye wash kit is available
 
-## Body part or clothing is caught in moving parts
+## Body part, clothing, or jewelery is caught in moving parts
 
 ### Severity
 
-M
+H
 
 ### Likelihood
 
@@ -96,11 +98,10 @@ L
 
 ### Who may be harmed & how
 
-- User - the user may experience injuries such as stretch, crush, or pinch injuries and cuts, irritation or abrasion
-  from the blade
+- User - the user may experience as stretch, crush, or pinch injuries. If pulled into blade, user may experience cuts, irritation or abrasion injuries.
 
 ### Control measures
 
 - Signage - signage indicating moving parts and pinch points is displayed
-- Training - users are instructed to remove or secure loose clothing and long hair
+- Training - users must secure long hair, and remove or secure loose clothing and jewelery
 - Equipment - first aid kit available
