@@ -48,6 +48,7 @@
 
 * Tap your tag on the access control box
 * Turn on machine using switch
+* Run the machine at max speed for 30 seconds to lubricate the internal mechanisms.
 
 ### Stopping the machine
 
