@@ -11,7 +11,7 @@ M
 L
 
 ### Who may be harmed & how
-- User - the user's extremities may be crushed by the table and slide as they are moving, particularly if power feed is being used. A risk of crushing is also present when movingthe tailstock.
+- User - the user's extremities may be crushed by the table and slide as they are moving, particularly if power feed is being used. A risk of crushing is also present when moving the tailstock.
 
 ### Control measures
 - Equipment - A first aid kit is available. A mechanical foot brake and emergency stop button are installed.
@@ -71,6 +71,7 @@ L
 
 ### Control measures
 - Training - user should ensure workpieces and tools are secured and the chuck key is removed before starting the machine.
+- Training - user must ensure chuck camlocks are secure before powering the machine.
 - Awareness - user must inform all users of the room that they are using the lathe.
 - Equipment - anyone in the room while the lathe is being used should be wearing appropriate PPE (eye protection and closed-toe shoes). An emergency stop button is installed, and first aid it is available.
 
@@ -132,6 +133,6 @@ M
 User - the user may receive cuts or burns from swarf or the workpiece.
 
 ### Control measures
-- Training - user should not touch cutting surfaces at any time, and should be aware of potential sharp edges on the workpiece (including from swarf which has not fallen clear). Workpieces should be sanded where appropriate before being considered "finished." Where possible, the perspex cut guard should be lowered for all operations. Users should select appropriate feed and speeds to ensure swarf is appropriately sized.
+- Training - user should not touch cutting surfaces at any time, and should be aware of potential sharp edges on the workpiece (including from swarf which has not fallen clear). Workpieces should be sanded where appropriate before being considered "finished." Where possible, the chuckguard should be lowered for all operations. Users should select appropriate feed and speeds to ensure swarf is appropriately sized.
 - Training - swarf cleanup should be done with shop vac or dustpan and brush, not by hand.
 - Equipment - if available, tight long sleeves should be worn. An emergency stop button is installed. A first aid kit is available.
