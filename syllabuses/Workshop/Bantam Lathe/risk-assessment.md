@@ -95,6 +95,25 @@ M
 - Equipment - user and other users of the room should wear eye protection, ear protection, closed toed shoes, and long sleeves. A first aid kit is available. An emergency stop button and footbrake are installed.
 
 
+## Crushing from chuck
+
+### Severity
+
+M
+
+### Likelihood
+
+L
+
+### Who may be harmed & how
+- User - the chucks are heavy and hard to grip, and require movement to unergonomic positions during changing. Dropping a chuck could cause a crushing injury to hands or feet.
+- The space - the lathe may also be damaged if a chuck is dropped on it.
+
+### Control measures
+- Training - the user should ensure plentiful space around the chuck is cleared before attempting to change the chuck.
+- Equipment - appropriate shoes, preferably with steel toecaps, should be worn during chuck changes. A first aid kit is available.
+
+
 ## Burns from tools or workpieces
 
 ### Severity
