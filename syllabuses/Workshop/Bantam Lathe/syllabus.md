@@ -177,10 +177,13 @@
 - Lock parting tool to toolpost. Adjust the workpiece in the chuck until the parting point is close to the jaws.
 - Ensure power feed is disabled and turn on the lathe.
 - Move the carriage until the right edge of the parting tool is approximately aligned with the left end of the part. Use the compound slide to adjust to within 0.5mm.
-- Very slowly, move the tool in until the part falls free of the stock. Do not attempt to catch it.
-- Power off the VFD and retrieve the part.
+- Very slowly, move the tool in until the centre of the workpiece is reached, stopping a little short if the workpiece is heavy or delicate (in this case, finish it by hand with a saw.)
+- Wind the tool out. Power off the VFD and retrieve the part.
 
 ### Using power feed
+#### General notes
+- Power feed should never be used for parting.
+- If the feed stop is used, perform a test
 #### Before use
 - Push the lever on the left face of the carriage down to disengage the threadcutting leadscrew.
 - Push the lever on the front face of the carriage down to disengage power feed.

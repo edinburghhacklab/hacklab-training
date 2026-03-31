@@ -1,5 +1,44 @@
 # Bantam Lathe
 
+## Injury from tools
+
+### Severity
+
+L
+
+### Likelihood
+
+L
+
+### Who may be harmed & how
+- User - tools can become hot due to friction while cutting and could cause burns. Tools are also sharp and may cause cuts.
+
+
+### Control measures
+- Training - the user should use coolant during cut operations where appropriate. The user should be aware that tools should not be touched immediately after a cut is finished, and never in cutting regions.
+- Equipment - a first aid kit is available.
+
+
+## Injuries from workpiece and swarf
+
+### Severity
+
+M
+
+### Likelihood
+
+L
+
+### Who may be harmed & how
+User - the user may receive cuts or burns from swarf or the workpiece. Some materials may create an extremely fine swarf causing a choking hazard.
+Bystander - some materials may create an extremely fine swarf causing a choking hazard.
+
+### Control measures
+- Training - user should not touch cutting surfaces at any time, and should be aware of potential sharp edges on the workpiece (including from swarf which has not fallen clear). Workpieces should be sanded where appropriate before being considered "finished." Where possible, the chuckguard should be lowered for all operations. Users should select appropriate feed and speeds to ensure swarf is appropriately sized.
+- Training - swarf cleanup should be done with shop vac or dustpan and brush, not by hand.
+- Equipment - if available, tight long sleeves should be worn. An emergency stop button is installed. A first aid kit is available. A respirator should be used if fine swarf is produced.
+
+
 ## Pinching in moving axis
 
 ### Severity
@@ -37,29 +76,11 @@ L
 - Equipment - appropriate shoes, preferably with steel toecaps, should be worn during chuck changes. A first aid kit is available.
 
 
-## Injury from tools
-
-### Severity
-
-M
-
-### Likelihood
-
-L
-
-### Who may be harmed & how
-- User - tools can become hot due to friction while cutting and could cause burns. Tools are also sharp and may cause cuts.
-
-### Control measures
-- Training - the user should use coolant during cut operations where appropriate. The user should be aware that tools should not be touched immediately after a cut is finished, and never in cutting regions.
-- Equipment - a first aid kit is available.
-
-
 ## Injuries from improper setup
 
 ### Severity
 
-H
+M
 
 ### Likelihood
 
@@ -72,6 +93,7 @@ L
 ### Control measures
 - Training - user should ensure workpieces and tools are secured and the chuck key is removed before starting the machine.
 - Training - user must ensure chuck camlocks are secure before powering the machine.
+- Training - user must use chuck guard wherever possible.
 - Awareness - user must inform all users of the room that they are using the lathe.
 - Equipment - anyone in the room while the lathe is being used should be wearing appropriate PPE (eye protection and closed-toe shoes). An emergency stop button is installed, and first aid it is available.
 
@@ -91,6 +113,7 @@ L
 - Bystander - anyone standing close by the lathe while it is in operation may become entangled if they have loose clothing, jewellery, or long loose hair.
 
 ### Control measures
+- Training - user must not apply cutting fluid while the lathe is in motion.
 - Training - user must ensure that they and anyone nearby have removed secured clothing, removed jewellery, and tied hair back. Gloves must not be worn.
 - Training - user should avoid holding files and must not hold sandpaper or emery paper in their hand. If sanding using the lathe is required, the sanding medium should be glued to a piece of wood. In all cases, tools held againt the workpiece must be held with a very loose grip, and should be released immediately in the event of unexpected force.
 - Training - user must ensure that neither they nor anyone else lean into the machine when the VFD is powered. Before starting the machine, user should ensure that the threading lead screw is disengaged.
@@ -117,22 +140,3 @@ L
 ### Control measures
 - Training - user must use coolant for flammable metals. User must ensure all flammable swarf (metals and wood) are removed from the machine after operation and that a thorough cleanup is performed. Wood should not be turned on this machine. Flammable metals must be turned with extreme care and preparation, and after consultation with qualified users if there is any uncertainty.
 - Equipment - a fire extinguisher is available. If turning flammable materials, the user should ensure it is within easy reach and is in-date.
-
-
-## Injuries from workpiece and swarf
-
-### Severity
-
-H
-
-### Likelihood
-
-M
-
-### Who may be harmed & how
-User - the user may receive cuts or burns from swarf or the workpiece.
-
-### Control measures
-- Training - user should not touch cutting surfaces at any time, and should be aware of potential sharp edges on the workpiece (including from swarf which has not fallen clear). Workpieces should be sanded where appropriate before being considered "finished." Where possible, the chuckguard should be lowered for all operations. Users should select appropriate feed and speeds to ensure swarf is appropriately sized.
-- Training - swarf cleanup should be done with shop vac or dustpan and brush, not by hand.
-- Equipment - if available, tight long sleeves should be worn. An emergency stop button is installed. A first aid kit is available.
